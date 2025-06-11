@@ -1,5 +1,7 @@
 # API
 
+
+
 {% openapi-operation spec="dimonoff-api" path="/v1/projects/{projectId}/action-types" method="get" %}
 [Broken link](broken-reference)
 {% endopenapi-operation %}
