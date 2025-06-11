@@ -13,3 +13,4 @@
 * [Glossaire (Glossary)](glossaire-glossary.md)
 * [Notes de l'auteur (Writer’s notes)](notes-de-lauteur-writers-notes.md)
 * [API](api.md)
+* [Diagramme](diagramme.md)
