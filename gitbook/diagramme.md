@@ -3,7 +3,6 @@
 Ce que c'est
 
 * draw.io, excalidraw
-*
 
 Fonctionnalités présentes
 

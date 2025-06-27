@@ -1,5 +1,5 @@
 ---
-description: Frequently asked questions.
+description: Foire aux questions.
 ---
 
 # FAQ

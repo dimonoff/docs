@@ -1,5 +1,5 @@
 ---
-description: What the application does and its benefits.
+description: Description des fonctionnalités de l'application et de ses avantages.
 ---
 
 # Introduction

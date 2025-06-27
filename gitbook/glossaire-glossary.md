@@ -1,5 +1,5 @@
 ---
-description: Definitions of key terms.
+description: Définitions des termes clés.
 ---
 
 # Glossaire (Glossary)
