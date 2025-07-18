@@ -1,6 +1,6 @@
 # Table of contents
 
-* [À propos de](README.md)
+* [À propos de ...](README.md)
 * [Démarrage](demarrage.md)
 * [Fundamentum Connect](fundamentum-connect/README.md)
   * [À propos](fundamentum-connect/a-propos/README.md)
