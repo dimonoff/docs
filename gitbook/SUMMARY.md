@@ -1,7 +1,7 @@
 # Table of contents
 
 * [À propos de](README.md)
-* [Démarrage](demarrage.md)
+* [Démarrage - En cours de rédaction](demarrage-en-cours-de-redaction.md)
 * [Fundamentum Connect](fundamentum-connect/README.md)
   * [À propos](fundamentum-connect/a-propos/README.md)
     * [En général](fundamentum-connect/a-propos/en-general.md)
