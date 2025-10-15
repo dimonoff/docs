@@ -2,7 +2,7 @@
 description: L'application pour les permissions et les accès.
 ---
 
-# Fundamentum Connect
+# Fundamentum Connect - En cours de rédaction
 
 Explication des configurations.&#x20;
 
