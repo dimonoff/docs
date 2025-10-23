@@ -25,3 +25,7 @@
 * [API](api.md)
 * [Diagramme](diagramme.md)
 * [Notes de version](notes-de-version.md)
+
+## Concepts
+
+* [Transfert de fichiers](concepts/transfert-de-fichiers.md)
