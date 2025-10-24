@@ -32,7 +32,6 @@
   * [PubSub](fundamentum-hub-en-cours-de-redaction/pubsub.md)
   * [Connecteurs](fundamentum-hub-en-cours-de-redaction/connecteurs.md)
 * [API](api.md)
-* [Diagramme](diagramme.md)
 * [Notes de version](notes-de-version.md)
 
 ## Concepts
