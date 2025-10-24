@@ -8,7 +8,7 @@ Cette section décrit les étapes à suivre pour qu’un nouvel utilisateur puis
 \
 **1. Invitation par un des administrateurs du projet (licence)**
 
-L’administrateur d'un projet (licence) est responsable de la gestion des comptes et des permissions des utilisateurs.
+L’administrateur d'un projet (licence) au sein d'une organisation est responsable de la gestion des comptes et des permissions des utilisateurs.
 
 Une fois le compte créé, le nouvel utilisateur reçoit automatiquement une **invitation par courriel** pour rejoindre la plateforme.\
 \
