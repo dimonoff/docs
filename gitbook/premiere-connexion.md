@@ -20,10 +20,10 @@ Le nouvel utilisateur doit :
 
 2.2 Cliquer sur le lien fourni pour compléter votre compte.
 
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 \
 2.3 Suivre les instructions et créer un mot de passe personnel.
-
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
