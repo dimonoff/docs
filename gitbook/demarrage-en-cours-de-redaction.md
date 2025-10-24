@@ -1,10 +1,8 @@
 ---
-description: >-
-  Installation/mise en place, configuration initiale et connexion des
-  dispositifs.
+description: Comment avoir accès à Fundamentum ?
 ---
 
-# Démarrage
+# Premier Pas - En cours de rédaction
 
 Avant de commencer, vous devez obtenir une invitation à la plateforme de **Connect**.
 
@@ -14,15 +12,11 @@ Ensuite, visitez le **Hub** et connecter vous. Le Hub utilise la dernière organ
 
 Créez un registre pour être en mesure de provisionner des appareils.
 
-Au besoin, créez un nouveau type de dispositif / type d'actif.&#x20;
+Au besoin, créez un nouveau type de dispositif / type d'actif.
 
-Provisionnez un appareil.&#x20;
+Provisionnez un appareil.
 
-
-
-
-
-Documenter&#x20;
+Documenter
 
 * Comment changer la langue
 * L'icône "mon compte (renseignements d’identification, mes rôles, clés d’API)
