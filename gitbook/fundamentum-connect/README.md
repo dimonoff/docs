@@ -1,20 +1,7 @@
 ---
-description: L'application pour les permissions et les accès.
+description: Permissions et  accès.
 ---
 
 # Fundamentum Connect - En cours de rédaction
 
-Explication des configurations.&#x20;
-
-Explication des commandes et des actions.&#x20;
-
-Explication des states (états ?).&#x20;
-
-Configuration d’un gateway.&#x20;
-
-Utilisation du PubSub pour réagir à des données.&#x20;
-
-Création et gestion d’alertes.&#x20;
-
-Connecteurs.&#x20;
-
+**Connect** est l'application qui gère les permissions et les accès. Elle vous offre un contrôle granulaire sur qui peut accéder à vos appareils et quelles actions peuvent être effectuées. Avec **Connect**, vous pouvez définir des rôles, attribuer des permissions spécifiques et garantir la sécurité de votre réseau IoT.
