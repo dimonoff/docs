@@ -1,8 +1,9 @@
----
-description: Changer de projet, lien vers IoT Hub et se déconnecter
----
-
 # L'icône du cube
 
-* Expliquer que le bouton se trouve en haut à droite de l'écran.&#x20;
-* Expliquer que le survol de cet icône permet de choisir parmis les 3 boutons : Changer de projet, lien vers IoT Hub et se déconnecter
+
+
+* L’**icône du cube**, située en haut à droite de l’écran, permet d’accéder à un petit menu d’actions rapides. En cliquant dessus, vous pouvez :
+  * **Changer de projet (licence)** – Sélectionnez un autre projet sur lequel travailler.
+  * **Accéder à l’IoT Hub** – Ouvrez un lien direct vers la plateforme IoT Hub.
+  * **Se déconnecter** – Fermez votre session en toute sécurité.\
+    ![](<../../.gitbook/assets/image (2).png>)

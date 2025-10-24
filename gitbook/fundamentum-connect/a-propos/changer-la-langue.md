@@ -1,3 +1,8 @@
 # Changer la langue
 
-* Expliquer que le bouton se trouve en haut à droite de l'écran.&#x20;
+
+
+* L’icône de traduction se trouve près du  &#x20;coin en haut à droite de la fenêtre. Vous pouvez l’utiliser pour  \
+  changer la langue.\
+  \
+  <img src="../../.gitbook/assets/image.png" alt="" data-size="original">
