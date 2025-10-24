@@ -8,7 +8,7 @@
     * [Authentification avec un autre fournisseur (Google ou Microsoft)](fundamentum-connect/page-de-connexion/authentification-avec-un-autre-fournisseur-google-ou-microsoft.md)
     * [Mot de passe oublié](fundamentum-connect/page-de-connexion/mot-de-passe-oublie.md)
     * [Langue](fundamentum-connect/page-de-connexion/langue.md)
-  * [Langue, notifications, Icône du Cube](fundamentum-connect/langue-notifications-icone-du-cube/README.md)
+  * [Langue, notifications, icône du cube](fundamentum-connect/langue-notifications-icone-du-cube/README.md)
     * [Changer la langue](fundamentum-connect/langue-notifications-icone-du-cube/changer-la-langue.md)
     * [Notifications](fundamentum-connect/langue-notifications-icone-du-cube/notifications.md)
     * [L'icône du cube](fundamentum-connect/langue-notifications-icone-du-cube/licone-du-cube.md)
