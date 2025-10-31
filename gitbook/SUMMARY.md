@@ -19,7 +19,6 @@
     * [Clés d'API](fundamentum-connect/a-propos/cles-dapi.md)
   * [Organisation](fundamentum-connect/organisation/README.md)
     * [Clients OAuth](fundamentum-connect/organisation/clients-oauth.md)
-    * [Gérer les projets](fundamentum-connect/organisation/gerer-les-projets.md)
   * [Projets](fundamentum-connect/projets/README.md)
     * [Projet](fundamentum-connect/projets/projet.md)
     * [Licences](fundamentum-connect/projets/licences.md)
