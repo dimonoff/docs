@@ -10,7 +10,7 @@ Ils servent à suivre l'utilisation, contrôler l'accès, limiter le débit et f
 
 1. Cliquez sur le bouton '**Générer une nouvelle clé'**.
 2. Donnez un **nom explicite** à la clé.
-3. Cliquez sur '**Créer'**.
+3. Cliquez sur '**Save'**.
 
 Une clé unique est alors générée.
 
