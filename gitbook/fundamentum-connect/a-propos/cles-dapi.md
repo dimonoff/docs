@@ -1,5 +1,7 @@
 # Clés d'API
 
+Cette section s'adresse principalement aux développeurs qui souhaitent utiliser le client API de Fundamentum.
+
 Les clés API permettent l'authentification des applications lors de l'accès aux API.
 
 Ils servent à suivre l'utilisation, contrôler l'accès, limiter le débit et faciliter l'intégration.
