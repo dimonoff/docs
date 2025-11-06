@@ -7,6 +7,6 @@ ou d'un appareil vers Fundamentum.
 
 Vue d'ensemble
 
-<img src="../.gitbook/assets/file-transfer-cloud-to-device.excalidraw.svg" alt="Vue d'ensemble du transfert de fichiers" class="gitbook-drawing">
+![Vue d'ensemble du transfert de fichiers](../.gitbook/assets/file-transfer-cloud-to-device.excalidraw.svg)
 
 ## Transfert d'un ou plusieurs fichier(s) d'un appareil vers Fundamentum
