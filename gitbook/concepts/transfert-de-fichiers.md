@@ -7,7 +7,7 @@ ou d'un appareil vers Fundamentum.
 
 Vue d'ensemble
 
-![Vue d'ensemble du transfert de fichiers](../.gitbook/assets/file-transfer-cloud-to-device.excalidraw.svg)
+![Vue d'ensemble du transfert de fichiers](../.gitbook/assets/file-transfer-cloud-to-device.svg)
 
 Étapes détaillées:
 
@@ -19,7 +19,7 @@ Vue d'ensemble
 
 Vue d'ensemble
 
-![Vue d'ensemble du transfert de fichiers](../.gitbook/assets/file-transfer-device-to-cloud.excalidraw.svg)
+![Vue d'ensemble du transfert de fichiers](../.gitbook/assets/file-transfer-device-to-cloud.svg)
 
 Étapes détaillées:
 
