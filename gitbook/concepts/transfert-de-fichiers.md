@@ -66,12 +66,12 @@ Vue d'ensemble
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) avec l'identifiant du transfert créé précédemment
    - La requête du fichier demandé sera envoyé à l'appareil spécifié
    - Le edge daemon de l'appareil recevra le transfert et émettra un évènement GRPC
-   - Sur l'appareil, vous devez avoir un programme qui écoute cet évènement GRPC, accepte le transfert, et y téléversee le fichier depuis l'endroit spécifié
+   - Sur l'appareil, vous devez avoir un programme qui écoute cet évènement GRPC, accepte le transfert, et y téléverse le fichier depuis l'endroit spécifié
 
 3. Demander les fichiers (polling)
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/getFileTransferFiles) avec l'identifiant du transfert créé précédemment
    - Si le fichier a été téléversé par l'appareil, cet API vous retournera l'url de téléchargement de celui-ci
-   - Répétez cet appel plusieurs fois jsuqu'à ce que vous obteniez l'url
+   - Répétez cet appel plusieurs fois jusqu'à ce que vous obteniez l'url
    - Téléchargez le fichier depuis cet url
 
    ```shell
