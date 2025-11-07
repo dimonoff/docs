@@ -17,7 +17,7 @@ Vue d'ensemble
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) pour créer un transfert avec la direction cloud-to-device 
    - Spécifiez la liste de fichiers que vous souhaitez transférer
    - Spécifiez la liste d'appareils auquel vous souhaitez transférer les fichiers
-   - Le service vous retournera le transfert de chauqe
+   - Le service vous retournera le transfert ainsi qu'une url de téléversement pour chacun des fichiers spécifiés
 
 2. Téléverser le ou les fichier(s) à transférer
    - Pour chacun des fichiers indiqués dans le transfert: téléversez à l'aide de l'url présignée précédemment obtenue
