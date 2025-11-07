@@ -59,8 +59,8 @@ Vue d'ensemble
 
 1. Créer le transfert
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) pour créer un transfert avec la direction device-to-cloud
+   - Spécifiez le ou les fichier(s) à demander
    - Vous ne pouvez cibler qu'un seul appareil
-   - Vous ne pouvez demander qu'un seul fichier
    
 2. Exécuter le transfert
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) avec l'identifiant du transfert créé précédemment
