@@ -9,8 +9,11 @@ La fonction **Changer de projet**, accessible depuis l’**icône en forme de cu
 
 
     <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-3.  Ouvrir la **liste déroulante** pour afficher tous les projets disponibles.\
+3.  Ouvrir la **liste déroulante** pour afficher toutes les organisations disponibles.\
 
 
     <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-4. Cliquer sur le **projet souhaité** pour y accéder.
+4. Cliquer sur l'**organisation souhaitée** et vous verrez apparaitre la liste des projets existants dans cette organisation.
+5. Cliquer sur le projet auquel vous souhaitez accéder.
+
+<figure><img src="../../../.gitbook/assets/image (29).png" alt="" width="448"><figcaption></figcaption></figure>
