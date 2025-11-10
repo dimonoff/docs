@@ -16,6 +16,6 @@ Une clé unique est alors générée.
 
 ⚠️ **Important :** copiez la clé immédiatement après sa création — elle ne sera plus visible par la suite pour des raisons de sécurité.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>

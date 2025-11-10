@@ -13,6 +13,8 @@
     * [Notifications](fundamentum-connect/langue-notifications-icone-du-cube/notifications.md)
     * [L'icône du cube](fundamentum-connect/langue-notifications-icone-du-cube/licone-du-cube/README.md)
       * [Changer de projet](fundamentum-connect/langue-notifications-icone-du-cube/licone-du-cube/changer-de-projet.md)
+      * [IoT Hub](fundamentum-connect/langue-notifications-icone-du-cube/licone-du-cube/iot-hub.md)
+      * [Déconnexion](fundamentum-connect/langue-notifications-icone-du-cube/licone-du-cube/deconnexion.md)
   * [Mon compte](fundamentum-connect/a-propos/README.md)
     * [Renseignement d'identification](fundamentum-connect/a-propos/renseignement-didentification.md)
     * [Mes rôles](fundamentum-connect/a-propos/mes-roles.md)

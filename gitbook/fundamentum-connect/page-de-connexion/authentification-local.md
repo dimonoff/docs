@@ -7,4 +7,4 @@ Cette méthode ne dépend d’aucun fournisseur d’identité externe et peut ê
 2. Entrez votre **mot de passe** associé à ce compte.
 3. Cliquez sur le bouton '**Go'** pour accéder à la plateforme.
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>

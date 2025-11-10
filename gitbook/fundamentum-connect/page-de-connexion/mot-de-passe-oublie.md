@@ -7,4 +7,4 @@ Si vous avez oublié votre mot de passe, vous pouvez facilement en définir un n
 3. Cliquez sur le bouton '**GO**'.
 
 Un **courriel de réinitialisation** vous sera alors envoyé à l’adresse indiquée.\
-![](<../../.gitbook/assets/image (14).png>)![](<../../.gitbook/assets/image (15).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)![](<../../.gitbook/assets/image (15) (1).png>)
