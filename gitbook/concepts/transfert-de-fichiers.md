@@ -90,3 +90,185 @@ fun devices transfer cloud-to-device -d {ID_DE_VOTRE_APPAREIL} -p {ID_DU_PROJET_
    -r {ID_DU_REGISTRE_DE_VOTRE_APPAREIL} -f {CHEMIN_LOCAL_DU_FICHIER_À_TRANSFÉRER} \
    --remote-path {CHEMIN_SUR_L_APPAREIL_OÙ_SERA_SAUVEGARDÉ_LE_FICHIER} --context {CONTEXT_D_AUTHENTIFICATION_DU_CLI}
 ```
+
+## Implémentation d'une application de transfert de fichiers sur l'appareil
+
+### Proto
+
+https://bitbucket.org/amotus/fundamentum-edge-proto
+
+### Exemple (en Go)
+
+Les dépendances Go utilisées:
+
+```
+google.golang.org/grpc v1.70.0
+google.golang.org/protobuf v1.36.1
+```
+
+Autres outils:
+
+[Protoc](https://protobuf.dev/installation/)
+
+Générer les pb à partir des proto:
+
+```shell
+#!/usr/bin/env bash
+set -euo pipefail
+shopt -s nullglob
+
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
+
+cd "{{source_directory()}}/proto"
+files=(*.proto **/*.proto)
+opts=()
+grpc_opts=()
+for f in "${files[@]}"; do
+  g=`realpath $f`
+  opts+=( "--go_opt=M$f=$(dirname "path/to/proto/$f");$(basename "${g%/*}")" )
+  grpc_opts+=("--go-grpc_opt=M$f=$(dirname "path/to/proto/$f");$(basename "${g%/*}")")
+done
+set -x
+protoc --proto_path=. --go_out=. --go_opt=paths=source_relative "${opts[@]}" --go-grpc_out=. --go-grpc_opt=paths=source_relative "${grpc_opts[@]}" "${files[@]}"
+```
+
+Code:
+
+```go
+package main
+
+import (
+   "context"
+   "crypto/sha512"
+   "encoding/base64"
+   "fmt"
+   "io"
+   "os"
+
+   pb "path/to/pb" // pb générés à partir des protos
+
+   "google.golang.org/grpc"
+   "google.golang.org/grpc/credentials/insecure"
+)
+
+func ListenToFileTransfers(ctx context.Context, rpcUrl string) error {
+   transportOptions := grpc.WithTransportCredentials(insecure.NewCredentials())
+   conn, err := grpc.NewClient(rpcUrl, transportOptions)
+   fileTransferClient := pb.NewFileTransferClient(conn)
+
+   subscription, err := fileTransferClient.Subscribe(ctx, nil)
+   if err != nil {
+      return err
+   }
+
+   for {
+      fmt.Println("Waiting for file transfer...")
+      req, err := subscription.Recv()
+      if err != nil {
+         return fmt.Errorf("error receiving file transfer request: %w", err)
+      }
+
+      err = handleFileRequest(ctx, req)
+      if err != nil {
+         return fmt.Errorf("error handling file transfer request: %w", err)
+      }
+   }
+}
+
+func handleFileRequest(ctx context.Context, req *pb.FileTransferRequest) error {
+   fmt.Println("Handling file request")
+   if req.GetDownload() != nil {
+      return handleDownload(ctx, req.GetActionId(), req.GetDownload().GetSize())
+   }
+
+   return handleUpload(ctx, req.GetActionId(), req.GetUpload().GetFilePath())
+}
+
+func handleDownload(ctx context.Context, actionId *pb.ActionId, size uint64) error {
+   fmt.Println("Handling download")
+   // This always accept requests for demo purposes, but we could refuse based on some criteria
+   responseStream, err := fileTransferClient.DownloadFile(ctx, &pb.DownloadFileRequest{
+      ActionId: actionId,
+   })
+   if err != nil {
+      return fmt.Errorf("error handling download request: %w", err)
+   }
+
+   totalData := make([]byte, size)
+   fmt.Println(fmt.Sprintf("Downloading %d bytes", size))
+
+   // Receive all response chunks from the stream
+   for {
+      resp, err := responseStream.Recv()
+      if err == io.EOF {
+         fmt.Println("File download completed, all chunks received. File contents:")
+         fmt.Println(string(totalData))
+		 // TODO save file at remote path in request
+         fmt.Println()
+         break
+      }
+      if err != nil {
+         return fmt.Errorf("error receiving file download chunk: %w", err)
+      }
+
+      chunkData := resp.GetChunk().GetData()
+      fmt.Println(fmt.Sprintf("Copying data chunk from byte %d to %d", resp.GetChunk().GetIndex(), uint64(len(chunkData))+resp.GetChunk().GetIndex()))
+      for i, b := range chunkData {
+         totalData[resp.GetChunk().GetIndex()+uint64(i)] = b
+      }
+   }
+
+   return nil
+}
+
+func handleUpload(ctx context.Context, actionId *pb.ActionId, filePath string) error {
+   fmt.Println("Handling upload")
+   // This always accept requests for demo purposes, but we could refuse based on some criteria
+   responseStream, err := fileTransferClient.UploadFile(ctx)
+   if err != nil {
+      return fmt.Errorf("error creating upload stream: %w", err)
+   }
+   fmt.Println(fmt.Sprintf("Reading test file to upload (filePath=%s)", filePath))
+   data, err := os.ReadFile(filePath)
+   if err != nil {
+      return fmt.Errorf("error reading test file: %w", err)
+   }
+
+   hash512 := sha512.Sum512(data)
+   sriHash := "sha512-" + base64.StdEncoding.EncodeToString(hash512[:])
+
+   fmt.Printf("Uploading headers (actionId=%d, size=%d, hash=%s)\n", actionId.GetId(), uint64(len(data)), sriHash)
+   err = responseStream.Send(&pb.UploadFileRequest{
+      Payload: &pb.UploadFileRequest_Header_{Header: &pb.UploadFileRequest_Header{
+         ActionId: actionId,
+         Size:     uint64(len(data)),
+         Hash:     sriHash,
+      }},
+   })
+   if err != nil {
+      return fmt.Errorf("error sending upload header: %w", err)
+   }
+   start := uint64(0)
+   fmt.Println("Uploading test file contents")
+   err = responseStream.Send(&pb.UploadFileRequest{
+      Payload: &pb.UploadFileRequest_Chunk_{Chunk: &pb.UploadFileRequest_Chunk{
+         Inner: &pb.FileChunk{
+            Index: &start,
+            Data:  data,
+         },
+      }},
+   })
+   if err != nil {
+      return fmt.Errorf("error sending upload chunk: %w", err)
+   }
+   _, err = responseStream.CloseAndRecv()
+   if err != nil {
+      return fmt.Errorf("error closing upload streanm: %w", err)
+   }
+   fmt.Println("Upload complete")
+   fmt.Println(string(data))
+   fmt.Println()
+   return nil
+}
+```
