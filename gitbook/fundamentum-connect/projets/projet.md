@@ -6,7 +6,21 @@ Chaque onglet facilite une gestion précise et organisée des paramètres du pro
 
 
 
-* **Configuration** : Permet de modifier l’organisation liée au projet, gérer la facturation, changer l’adresse email utilisée pour l’envoi des notifications, ainsi que définir l’URL de l’application.
+* **Configuration** :&#x20;
+
+Organisation: Permet de modifier le nom organisation liée au projet
+
+Facturation:&#x20;
+
+Identifiant du projet: un nombre unique associé à un projet permettant de l'identifier dans les base de données. Il n'est pas possible de le changer dans ce menu
+
+Identifiant: le nom du projet
+
+Adresse courriel pour l'envoi des notifications: changer l’adresse email utilisée pour l’envoi des notifications
+
+URL de l'application: définir l’URL de l’application.
+
+Mettre à jour le projet
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
