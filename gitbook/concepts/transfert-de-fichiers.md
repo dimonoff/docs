@@ -9,30 +9,53 @@ ou d'un appareil vers Fundamentum.
 
 Vue d'ensemble
 
-![Vue d'ensemble du transfert de fichiers](../.gitbook/assets/file-transfer-cloud-to-device.svg)
+```plantuml
+@startuml
+skinparam sequenceMessageAlign center
+skinparam actorStyle awesome
+actor  Client        as C
+participant Fundamentum   as F
+participant "Appareil(s)" as D
+
+title Transfert de fichier(s) de Fundamentum vers un ou des appareil(s)
+
+autonumber
+C -> F : Crée le transfert
+F -> C : Retourne le transfert et les urls de téléversement
+C -> F : Téléverse le(s) fichier(s) à transférer
+C -> F : Exécute le transfert
+F -> D : Envoie le(s) fichier(s)
+D -> F : Retourne le statut du téléchargement
+F -> C : Affiche le statut du téléchargement via le hub
+@enduml
+```
 
 Étapes détaillées:
 
-1. Créer le transfert
+1. Création le transfert
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) pour créer un transfert avec la direction cloud-to-device 
    - Spécifiez la liste de fichiers que vous souhaitez transférer
    - Spécifiez la liste d'appareils auquel vous souhaitez transférer les fichiers
    - Le service vous retournera le transfert ainsi qu'une url de téléversement pour chacun des fichiers spécifiés
 
-2. Téléverser le ou les fichier(s) à transférer
-   - Pour chacun des fichiers indiqués dans le transfert: téléversez à l'aide de l'url présignée précédemment obtenue
+2. Obtention du transfert et des urls de téléversement
+
+3. Téléversement du ou des fichier(s) à transférer
+   - Pour chacun des fichiers indiqués dans le transfert: téléversez à l'aide de l'url présignée obtenue à l'étape 2
 
    ```shell
    curl --upload-file {CHEMIN_VERS_VOTRE_FICHIER} {URL_DE_TELEVERSEMENT}
    ```
    
-3. Exécuter le transfert
+4. Exécution du transfert
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) avec l'identifiant du transfert créé précédemment
    - Les fichiers à transférer doivent tous être téléversés
-   - Les fichiers seront ensuite envoyés au(x) appareil(s) spécifié(s)
-   - Le edge daemon de chaque appareil recevra le transfert et émettra un évènement GRPC
-   - Sur chaque appareil, vous devez avoir un programme qui écoute cet évènement GRPC, accepte le transfert, et télécharge le fichier à l'endroit spécifié
-   - Vous pouvez voir le résultat du transfert dans l'onglet Actions de la page de votre appareil dans le Fundamentum Hub
+
+5. Envoi de(s) fichier(s)
+  - Une requête par fichier sera ensuite envoyée au(x) appareil(s) spécifié(s)
+  - Le edge daemon de chaque appareil recevra le transfert et émettra un évènement GRPC
+  - Sur chaque appareil, vous devez avoir un programme qui écoute cet évènement GRPC, accepte le transfert, et télécharge le fichier à l'endroit spécifié
+  - Vous pouvez voir le résultat du transfert dans l'onglet Actions de la page de votre appareil dans le Fundamentum Hub
 
 ### En utilisant le CLI de Fundamentum
 
@@ -53,22 +76,45 @@ fun devices transfer cloud-to-device -d {ID_DE_VOTRE_APPAREIL} -p {ID_DU_PROJET_
 
 Vue d'ensemble
 
-![Vue d'ensemble du transfert de fichiers](../.gitbook/assets/file-transfer-device-to-cloud.svg)
+```plantuml
+@startuml
+skinparam sequenceMessageAlign center
+skinparam actorStyle awesome
+actor       Client        as C
+participant Fundamentum   as F
+participant "Appareil(s)" as D
+
+title Transfert de fichier(s) depuis un appareil vers Fundamentum
+
+autonumber
+C -> F : Crée le transfert
+F -> C : Retourne le transfert
+C -> F : Exécute le transfert
+F -> D : Envoie le(s) demande(s) de fichiers
+C -> F : Demande le lien de téléchargement de(s) fichier(s) (polling)
+D -> F : Téléverse le fichier
+F -> C : Retourne les liens de téléchargement de(s) fichier(s)
+@enduml
+```
 
 Étapes détaillées:
 
-1. Créer le transfert
+1. Création du transfert
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) pour créer un transfert avec la direction device-to-cloud
    - Spécifiez le ou les fichier(s) à demander
    - Vous ne pouvez cibler qu'un seul appareil
-   
-2. Exécuter le transfert
-   - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) avec l'identifiant du transfert créé précédemment
-   - La requête du fichier demandé sera envoyé à l'appareil spécifié
-   - Le edge daemon de l'appareil recevra le transfert et émettra un évènement GRPC
-   - Sur l'appareil, vous devez avoir un programme qui écoute cet évènement GRPC, accepte le transfert, et y téléverse le fichier depuis l'endroit spécifié
 
-3. Demander les fichiers (polling)
+2. Obtention du transfert
+   
+3. Exécution du transfert
+   - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) avec l'identifiant du transfert créé précédemment
+
+4. Envoi de(s) demande(s) de fichiers
+   - Une requête par fichier demandé sera envoyé à l'appareil spécifié
+   - Le edge daemon de l'appareil recevra le transfert et émettra un évènement GRPC
+   - Sur l'appareil, vous devez avoir un programme qui écoute cet évènement GRPC (voir plus bas), accepte le transfert, et y téléverse le fichier depuis l'endroit spécifié
+
+5. Demander les fichiers (polling)
    - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/getFileTransferFiles) avec l'identifiant du transfert créé précédemment
    - Si le fichier a été téléversé par l'appareil, cet API vous retournera l'url de téléchargement de celui-ci
    - Répétez cet appel plusieurs fois jusqu'à ce que vous obteniez l'url
