@@ -2,7 +2,7 @@
 
 * [À propos de](README.md)
 * [Première connexion](premiere-connexion.md)
-* [Fundamentum Connect - En cours de rédaction](fundamentum-connect/README.md)
+* [Fundamentum Connect](fundamentum-connect/README.md)
   * [Page de connexion](fundamentum-connect/page-de-connexion/README.md)
     * [Authentification local](fundamentum-connect/page-de-connexion/authentification-local.md)
     * [Authentification avec un autre fournisseur (Google ou Microsoft)](fundamentum-connect/page-de-connexion/authentification-avec-un-autre-fournisseur-google-ou-microsoft.md)
@@ -21,7 +21,7 @@
     * [Clés d'API](fundamentum-connect/a-propos/cles-dapi.md)
   * [Organisation](fundamentum-connect/organisation/README.md)
     * [Clients OAuth](fundamentum-connect/organisation/clients-oauth.md)
-  * [Projets](fundamentum-connect/projets/README.md)
+  * [Projets  - En cours de rédaction](fundamentum-connect/projets/README.md)
     * [Projet](fundamentum-connect/projets/projet.md)
     * [Licences](fundamentum-connect/projets/licences.md)
     * [Utilisateurs](fundamentum-connect/projets/utilisateurs.md)
