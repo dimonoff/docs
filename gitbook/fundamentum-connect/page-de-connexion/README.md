@@ -2,7 +2,7 @@
 
 1. Ouvrez un navigateur web.
 
-Fundamentum inclut une application Web. Les navigateurs suivants ont été testés afin de connaitre leur compatibilité et sont supportés par Dimonoff (les téléphones intelligents et les iPads ne sont pas supportés) :
+Fundamentum inclut une application Web. Voici des exemples de navigateurs qui peuvent être utilisés:
 
 · Google Chrome (recommandé) ;
 
@@ -10,7 +10,7 @@ Fundamentum inclut une application Web. Les navigateurs suivants ont été test�
 
 · Firefox ;
 
-· Google Chrome pour Android (écran de haute définition).
+
 
 2. Entrez l’adresse URL: [https://oauth.fundamentum-iot.com/authx/login](https://oauth.fundamentum-iot.com/authx/login)
 
