@@ -36,7 +36,7 @@ Assurez-vous que le mot de passe respecte les critères de sécurité suivants :
 
 \
 **4. Fournisseurs d'identité**\
-Cette section permet à l’utilisateur de **lier son compte à un fournisseur d’identité externe**, tel que **Google** ou **Microsoft**. Grâce à cette fonctionnalité, il est possible de se connecter au logiciel sans avoir à saisir de mot de passe.
+Cette section permet à l’utilisateur de **lier son compte à un fournisseur d’identité externe**, tel que **Google** ou **Microsoft**. Grâce à cette fonctionnalité, il est possible de se connecter au logiciel en utilisant l'adresse courriel et mot de passe associés à votre compte Google ou Microsoft
 
 **Fonctionnement :**
 

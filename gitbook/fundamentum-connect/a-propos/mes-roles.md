@@ -7,12 +7,14 @@ Elle permet de savoir quel rôle est actuellement associé à votre compte, qui 
 
 **Rôles**: Ils sont des ensembles d'autorisations qui peuvent être attribués aux utilisateurs.
 
-Les administrateurs de la plateforme peuvent gérer les rôles système, qui peuvent être attribués aux administrateurs.
+Les administrateurs de la plateforme peuvent gérer les rôles systèmes, qui peuvent être attribués aux administrateurs.
 
-Voici les rôles système par défaut disponibles dans Fundamentum :
+Voici les rôles systèmes par défaut disponibles dans Fundamentum :
 
 * **Les chefs de projet (Project Manager)** peuvent gérer les rôles du projet, qui peuvent être attribués aux utilisateurs de ce projet.
-* **Les gestionnaires de licences(License Manager)** peuvent gérer les rôles de licence, qui peuvent être attribués aux utilisateurs de cette licence.
+* **Les gestionnaires de licences (License Manager)** peuvent gérer les rôles de licence, qui peuvent être attribués aux utilisateurs de cette licence.
+
+Le numéro entre parenthèse correspond à l'identifiant unique du projet à lequel le rôle a été attribué. L'identifiant du projet se retrouve également dans le menu Projet, onglet Configuration.
 
 **From**: Désigne la personne qui a assigné ce rôle à cet utilisateur\
 \

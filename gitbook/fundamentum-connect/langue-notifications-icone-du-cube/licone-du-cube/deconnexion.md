@@ -8,7 +8,7 @@ La fonction **Déconnexion** permet de quitter **l’application** rapidement de
 2.  Sélectionner Déconnexion
 
     <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
-3.  Vous êtes redirigé vers la page de connexion.\
+3.  Vous êtes redirigés vers la page de connexion.\
 
 
     <figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
