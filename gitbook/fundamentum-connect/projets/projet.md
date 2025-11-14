@@ -8,15 +8,18 @@ Chaque onglet facilite une gestion précise et organisée des paramètres du pro
 
 Organisation: Permet de modifier le nom de l'organisation liée au projet
 
-Facturation:
+**Facturation**: Chaque projet doit attribuer un identifiant de facturation. Ce système permet aux clients de facturer plusieurs projets sur le même compte ou de répartir les coûts pour différents environnements (par exemple, mise en scène, production) sur des comptes de facturation distincts.
 
-Identifiant du projet: un nombre unique associé à un projet permettant de l'identifier dans les base de données. Il n'est pas possible de le changer dans ce menu.
+**Identifiant du projet**: un nombre unique associé à un projet permettant de l'identifier dans les base de données. Il n'est pas possible de le changer dans ce menu
 
-Identifiant: le nom du projet
+**Identifiant**: C'est un identifiant unique pour accéder aux API Fundamentum.
 
-Adresse courriel pour l'envoi des notifications: changer l’adresse email utilisée pour l’envoi des notifications
+**Adresse courriel pour l'envoi des notifications**: changer l’adresse email utilisée pour l’envoi des notifications
 
-URL de l'application: définir l’URL de l’application.
+**URL de l'application**: définir l’URL de l’application.
+
+\
+**Meta Data**: permet aux clients de fournir des données non Fundamentum à un projet au format JSON.
 
 Cliquer sur Mettre à jour le projet pour enregistrer les changements.
 
