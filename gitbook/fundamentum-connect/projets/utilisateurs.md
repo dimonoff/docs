@@ -1,10 +1,12 @@
 # Utilisateurs
 
-<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
-
-La gestion des utilisateurs est à partir du menu 'Utilisateurs' dans le menu latéral gauche.
+La gestion des utilisateurs est faite à partir du menu 'Utilisateurs' dans le menu latéral gauche.
 
 <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Créer un nouvel utilisateur**
 

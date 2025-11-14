@@ -5,14 +5,12 @@ La fonction **Changer de projet**, accessible depuis l’**icône en forme de cu
 **Étapes à suivre :**
 
 1. Cliquer sur l’**icône de cube** dans la barre des paramètres rapides.
-2.  Sélectionner l’option **Changer le projet**.\
-
-
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-3.  Ouvrir la **liste déroulante** pour afficher toutes les organisations disponibles.\
-
+2.  Sélectionner l’option **Changer le projet**.\\
 
     <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+3.  Ouvrir la **liste déroulante** pour afficher toutes les organisations disponibles.\\
+
+    <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Cliquer sur l'**organisation souhaitée** et vous verrez apparaitre la liste des projets existants dans cette organisation.
 5. Cliquer sur le projet auquel vous souhaitez accéder.
 
