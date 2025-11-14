@@ -5,4 +5,4 @@ Une organisation permet de structurer et gérer les ressources, les permissions 
 Fundamentum dispose de plusieurs couches de données qui permettent une gestion à plusieurs niveaux et une intégration dans plusieurs types d'autres systèmes.\
 
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
