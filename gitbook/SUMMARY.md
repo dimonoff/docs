@@ -33,6 +33,8 @@
   * [Actes](fundamentum-hub-en-cours-de-redaction/actes.md)
   * [PubSub](fundamentum-hub-en-cours-de-redaction/pubsub.md)
   * [Connecteurs](fundamentum-hub-en-cours-de-redaction/connecteurs.md)
+* Fundamentum CLI
+  * [À propos](fundamentum-cli/a-propos.md)
 * [API](api.md)
 * [Notes de version](notes-de-version.md)
 
