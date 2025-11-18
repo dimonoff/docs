@@ -43,3 +43,4 @@
 ## Fundamentum CLI
 
 * [À propos](fundamentum-cli/a-propos.md)
+* [Démarrage](fundamentum-cli/demarrage.md)
