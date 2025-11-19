@@ -8,9 +8,9 @@ sur Fundamentum avec les droits suffisants pour les fonctionnalités que vous so
 
 Il est disponible [ici](https://cli.fundamentum-iot.com)
 
-# Configuration
+# Authentification
 
-Il est possible de configurer le cli avec la commande `fun login`. Celle-ci vous
+Il est possible d'authentifier le cli avec la commande `fun login`. Celui-ci vous
 demandera quelques questions, dont les valeurs par défaut sont correctes pour Fundamentum
 déployé sur fundamentum-iot.com (Appuyer sur Entrée pour accepter les valeurs par défaut).
 Vous serez ensuite redirigé vers la page de connexion de Fundamentum. Après que vous vous
