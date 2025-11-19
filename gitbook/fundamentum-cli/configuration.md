@@ -5,7 +5,7 @@ informations dont il a besoin via l'invite de commandes).
 
 Il est possible d'exécuter le Fundamentum CLI dans un contexte où l'intervention humaine
 est impossible (dans un script, par exemple). Vous devrez alors fournir au Fundamentum CLI
-les valeurs sont il aura besoin via des variables d'environnement. Par exemple:
+les valeurs dont il aura besoin via des variables d'environnement. Par exemple:
 
 `fun functions list --project 1`
 
@@ -22,7 +22,7 @@ fun functions list --project 1
 ```
 
 Il est aussi possible de spécifier des variables d'environnement spécifiques à
-certaines commandes. Vous pouvez consulter la [documentation des commandes](https://cli.fundamentum-iot.com/reference/fun.html) à ce sujet.
+certaines commandes. Vous pouvez consulter la [documentation des commandes](https://cli.fundamentum-iot.com/reference/fun.html) à ce sujet (anglais seulement).
 
 # Emplacement
 
@@ -33,4 +33,3 @@ Le fundamentum CLI cherche sa configuration aux emplacements suivants (ordre de 
 3. `$XDG_CONFIG_HOME/fun/` (par défaut, `$HOME/.config/fun/`)
 4. `$XDG_CONFIG_DIRS/fun/` (par défaut, `/etc/xdg/fun/`)
 5. `./.fun/` (pour une configuration portable, dans un emplacement relatif)
-
