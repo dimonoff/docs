@@ -14,7 +14,6 @@ des APIs de Fundamentum. C'est donc possible de l'appeler ainsi:
 
 ```
 export FUN_CONTEXT_AUTH_APIKEY={VOTRE_CLE_D_API}
-export FUN_CONTEXT_AUTH_TYPE=apikey
 export FUN_CONTEXT=default
 export FUN_CONTEXT_FUNCTIONS_ENDPOINT=https://functions.fundamentum-iot.com
 export FUN_CONTEXT_FUNDAMENTUM_ENDPOINT=https://api.fundamentum-iot.com
