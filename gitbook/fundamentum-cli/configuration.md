@@ -13,8 +13,8 @@ nécessite un contexte, qui contient les infos d'authentification, et le point d
 des APIs de Fundamentum. C'est donc possible de l'appeler ainsi:
 
 ```
-export FUN_CONTEXT_AUTH_APIKEY={VOTRE_CLE_D_API}
-export FUN_CONTEXT=default
+export FUN_CONTEXT_API_KEY={VOTRE_CLE_D_API}
+export FUN_CONTEXT_NAME=default
 export FUN_CONTEXT_FUNCTIONS_ENDPOINT=https://functions.fundamentum-iot.com
 export FUN_CONTEXT_FUNDAMENTUM_ENDPOINT=https://api.fundamentum-iot.com
 fun functions list --project 1
