@@ -38,6 +38,7 @@
 
 ## Concepts
 
+* [PubSub Bridge](concepts/pubsub-bridge.md)
 * [Transfert de fichiers](concepts/transfert-de-fichiers.md)
 
 ## Fundamentum CLI
