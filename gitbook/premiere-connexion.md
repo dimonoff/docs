@@ -20,10 +20,10 @@ Le nouvel utilisateur doit :
 
 2.2 Cliquer sur le lien fourni pour compléter votre compte.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 \
 2.3 Suivre les instructions et créer un mot de passe personnel.
+
+<figure><img src=".gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 Le mot de passe doit respecter ces critères:
 
@@ -32,15 +32,13 @@ Le mot de passe doit respecter ces critères:
 * minimum 1 chiffre
 * minimum 1 caractère spécial
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
-
 2.4 Cliquer sur Enregistrer
+
+<figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 **3. Connexion à la plateforme Fundamentum**
 
 Une fois le compte activé, l’utilisateur peut se rendre sur l’adresse suivante pour se connecter\
 [https://oauth.fundamentum-iot.com/authx/login](https://oauth.fundamentum-iot.com/authx/login)
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
-
-\\
+<figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
