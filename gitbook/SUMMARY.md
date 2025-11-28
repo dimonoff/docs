@@ -42,6 +42,6 @@
 
 ## Fundamentum CLI
 
-* [À propos](fundamentum-cli/a-propos.md)
-* [Démarrage](fundamentum-cli/demarrage.md)
+* [About](fundamentum-cli/about.md)
+* [Getting started](fundamentum-cli/getting-started.md)
 * [Configuration](fundamentum-cli/configuration.md)
