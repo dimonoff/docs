@@ -130,7 +130,7 @@ jobs:
           PY
 
       - name: Send email
-        if: "!startsWith(github.event.head_commit.message, GITBOOK)" # Exclude commits made through gitbook
+        if: "!startsWith(github.event.head_commit.message, 'GITBOOK')" # Exclude commits made through gitbook
         uses: dawidd6/action-send-mail@v6
         with:
           server_address: smtp.mailgun.org
