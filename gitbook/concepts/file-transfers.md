@@ -1,13 +1,13 @@
-# Transfert de fichiers
+# File transfers
 
-Un transfert de fichiers peut se faire dans deux directions: de Fundamentum vers un ou des appareil(s),
-ou d'un appareil vers Fundamentum.
+A file transfer can be performed in one of two directions: from Fundamentum to one or many device(s),
+or from a device to Fundamentum.
 
-## Transfert d'un ou plusieurs fichier(s) de Fundamentum vers un ou des appareil(s)
+## Transfer of one or many file(s) from Fundamentum to one or many device(s)
 
-### En utilisant l'API
+### Using the API
 
-Vue d'ensemble
+Overview
 
 ```plantuml
 @startuml
@@ -15,66 +15,65 @@ skinparam sequenceMessageAlign center
 skinparam actorStyle awesome
 actor  Client        as C
 participant Fundamentum   as F
-participant "Appareil(s)" as D
+participant "Device(s)" as D
 
-title Transfert de fichier(s) de Fundamentum vers un ou des appareil(s)
+title Transfer of file(s) from Fundamentum to device(s)
 
 autonumber
-C -> F : Crée le transfert
-F -> C : Retourne le transfert et les urls de téléversement
-C -> F : Téléverse le(s) fichier(s) à transférer
-C -> F : Exécute le transfert
-F -> D : Envoie le(s) fichier(s)
-D -> F : Retourne le statut du téléchargement
-F -> C : Affiche le statut du téléchargement via le hub
+C -> F : Create transfer
+F -> C : Return created transfer with upload urls
+C -> F : Upload file(s) to transfer
+C -> F : Execute transfer
+F -> D : Send file(s)
+D -> F : Return download status
+F -> C : Display download status in the hub
 @enduml
 ```
 
-Étapes détaillées:
+Detailed steps:
 
-1. Création le transfert
-   - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) pour créer un transfert avec la direction cloud-to-device 
-   - Spécifiez la liste de fichiers que vous souhaitez transférer
-   - Spécifiez la liste d'appareils auquel vous souhaitez transférer les fichiers
-   - Le service vous retournera le transfert ainsi qu'une url de téléversement pour chacun des fichiers spécifiés
+1. Create transfer
+   - Call the [API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) to create a transfer with the cloud-to-device direction 
+   - Specify file(s) you want to transfer
+   - Specify device(s) you want to transfer to
+   - The service will return the new transfer, along with an upload url for each file
 
-2. Obtention du transfert et des urls de téléversement
+2. Return created transfer with upload urls
 
-3. Téléversement du ou des fichier(s) à transférer
-   - Pour chacun des fichiers indiqués dans le transfert: téléversez à l'aide de l'url présignée obtenue à l'étape 2
+3. Upload file(s)
+   - For each of the files specified in the transfer, upload it with the secured link obtained during step 2, which is valid for 15 minutes
 
    ```shell
-   curl --upload-file {CHEMIN_VERS_VOTRE_FICHIER} {URL_DE_TELEVERSEMENT}
+   curl --upload-file {LOCAL_FILE_PATH} {UPLOAD_URL}
    ```
    
-4. Exécution du transfert
-   - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) avec l'identifiant du transfert créé précédemment
-   - Les fichiers à transférer doivent tous être téléversés
+4. Execute transfer
+   - Call the [API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) with the identifier of the previously created transfer
+   - The file(s) to transfer must all have been uploaded
 
-5. Envoi de(s) fichier(s)
-  - Une requête par fichier sera ensuite envoyée au(x) appareil(s) spécifié(s)
-  - Le edge daemon de chaque appareil recevra le transfert et émettra un évènement GRPC
-  - Sur chaque appareil, vous devez avoir un programme qui écoute cet évènement GRPC, accepte le transfert, et télécharge le fichier à l'endroit spécifié
-  - Vous pouvez voir le résultat du transfert dans l'onglet Actions de la page de votre appareil dans le Fundamentum Hub
+5. Send file(s)
+  - One action per file will be sent to the specified device(s)
+  - The edge daemon on each device will receive the transfer action and emit a GRPC event
+  - On each device, there must be a program which listens to those GRPC events, accepts the transfer, and download the files at the desired locations
+  - The transfer action download status is visible in the Actions tab of each device page in the Fundamentum Hub
 
-### En utilisant le CLI de Fundamentum
+### Using the Fundamentum CLI
 
-Le CLI vous permet d'envoyer un seul fichier à un seul appareil. Il exécute les 3 étapes précédentes en une seule commmande.
-Il faut d'abord authentifier le CLI:
+The CLI provides a convenient way to send a single file to a single device. He performs the first 4 steps in a single command.
 
 ```shell
-fun login
-
-fun devices transfer cloud-to-device -d {ID_DE_VOTRE_APPAREIL} -p {ID_DU_PROJET_DE_VOTRE_APPAREIL} \
-   -r {ID_DU_REGISTRE_DE_VOTRE_APPAREIL} -f {CHEMIN_LOCAL_DU_FICHIER_À_TRANSFÉRER} \
-   --remote-path {CHEMIN_SUR_L_APPAREIL_OÙ_SERA_SAUVEGARDÉ_LE_FICHIER} --context {CONTEXT_D_AUTHENTIFICATION_DU_CLI}
+fun devices transfer cloud-to-device -d {DEVICE_ID} -p {PROJECT_ID_CONTAINING_THE_DEVICE} \
+   -r {REGISTRY_ID_CONTAINING_THE_DEVICE} -f {LOCAL_PATH_OF_FILE_TO_TRANSFER} \
+   --remote-path {PATH_ON_THE_DEVICE_WHERE_THE_FILE_WILL_BE_SAVED}
 ```
 
-## Transfert d'un ou plusieurs fichier(s) d'un appareil vers Fundamentum
+## Transfer of file(s) from a device to Fundamentum
 
-### En utilisant l'API
+Unlike transfers **to** a device, transfers **from** a device are limited to a single device.
 
-Vue d'ensemble
+### Using the API
+
+Overview
 
 ```plantuml
 @startuml
@@ -82,81 +81,80 @@ skinparam sequenceMessageAlign center
 skinparam actorStyle awesome
 actor       Client        as C
 participant Fundamentum   as F
-participant "Appareil(s)" as D
+participant "Device(s)" as D
 
-title Transfert de fichier(s) depuis un appareil vers Fundamentum
+title Transfer of file(s) from a device to Fundamentum
 
 autonumber
-C -> F : Crée le transfert
-F -> C : Retourne le transfert
-C -> F : Exécute le transfert
-F -> D : Envoie le(s) demande(s) de fichiers
-C -> F : Demande le lien de téléchargement de(s) fichier(s) (polling)
-D -> F : Téléverse le fichier
-F -> C : Retourne les liens de téléchargement de(s) fichier(s)
+C -> F : Create transfer
+F -> C : Return created transfer
+C -> F : Execute transfer
+F -> D : Send one request per file
+C -> F : Poll the service for the file(s) download url(s)
+D -> F : Upload the file(s)
+F -> C : Return the file(s) download url(s)
 @enduml
 ```
 
-Étapes détaillées:
+Detailed steps:
 
-1. Création du transfert
-   - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) pour créer un transfert avec la direction device-to-cloud
-   - Spécifiez le ou les fichier(s) à demander
-   - Vous ne pouvez cibler qu'un seul appareil
+1. Create transfer
+   - Call the [API](https://api.fundamentum-iot.com/docs#/operations/storeFileTransfer) to create a transfer with the device-to-cloud direction
+   - Specify file(s) to request
+   - Specify the device to transfer from
 
-2. Obtention du transfert
+2. Return created transfer
    
-3. Exécution du transfert
-   - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) avec l'identifiant du transfert créé précédemment
+3. Execute transfer
+   - Call the [API](https://api.fundamentum-iot.com/docs#/operations/executeFileTransfer) with the identifier of the previously created transfer
 
-4. Envoi de(s) demande(s) de fichiers
-   - Une requête par fichier demandé sera envoyé à l'appareil spécifié
-   - Le edge daemon de l'appareil recevra le transfert et émettra un évènement GRPC
-   - Sur l'appareil, vous devez avoir un programme qui écoute cet évènement GRPC (voir plus bas), accepte le transfert, et y téléverse le fichier depuis l'endroit spécifié
+4. Send file request(s)
+   - One request action per file will be sent to the specified device
+   - The edge daemon running on the device will receive the transfer action and emit a GRPC event
+   - There must be a program on the device that listens to those GRPC events, accepts transfers, and upload files
 
-5. Demander les fichiers (polling)
-   - Appelez l'[API](https://api.fundamentum-iot.com/docs#/operations/getFileTransferFiles) avec l'identifiant du transfert créé précédemment
-   - Si le fichier a été téléversé par l'appareil, cet API vous retournera l'url de téléchargement de celui-ci
-   - Répétez cet appel plusieurs fois jusqu'à ce que vous obteniez l'url
-   - Téléchargez le fichier depuis cet url
+5. Poll the service for the file(s) download url(s)
+   - Call the [API](https://api.fundamentum-iot.com/docs#/operations/getFileTransferFiles) with the identifier of the previously created transfer
+   - If the file(s) has/have been uploaded by the device, this API will return its download link(s), which is valid for 15 minutes
+   - Call this repeatedly until the device has uploaded all file(s)
+   - Download the file(s) from the url(s)
 
    ```shell
-   curl -o {CHEMIN_OÙ_VOUS_VOULEZ_SAUVEGARDER_LE_FICHIER} {URL_DE_TÉLÉCHARGEMENT}
+   curl -o {PATH_WHERE_TO_SAVE_THE_FILE} {DOWNLOAD_URL}
    ```
 
-### En utilisant le CLI de Fundamentum
+### Using the Fundamentum CLI
 
-Le CLI vous permet de demander un fichier à un appareil. Il exécute les 3 étapes précédentes en une seule commmande.
-Il faut d'abord authentifier le CLI:
+The CLI provides a convenient way to request a file from a single device. It executed the first 4 steps above in a single command.
 
 ```shell
-fun login
-
-fun devices transfer cloud-to-device -d {ID_DE_VOTRE_APPAREIL} -p {ID_DU_PROJET_DE_VOTRE_APPAREIL} \
-   -r {ID_DU_REGISTRE_DE_VOTRE_APPAREIL} -f {CHEMIN_LOCAL_DU_FICHIER_À_TRANSFÉRER} \
-   --remote-path {CHEMIN_SUR_L_APPAREIL_OÙ_SERA_SAUVEGARDÉ_LE_FICHIER} --context {CONTEXT_D_AUTHENTIFICATION_DU_CLI}
+fun devices transfer device-to-cloud -d {DEVICE_ID} -p {PROJECT_ID} \
+   -r {REGISTRY_ID} -n {NAME_FOR_THE_FILE_WHEN_DOWNLOADED} \
+   --remote-path {FILE_PATH_ON_THE_DEVICE}
 ```
 
-## Implémentation d'une application de transfert de fichiers sur l'appareil
+## Implementation of a program to handle file transfers (both directions) on a device
 
-### Proto
+### Proto files
+
+Devices communicate with Fundamentum using [Protobuf](https://protobuf.dev/). The format is defined in these files.
 
 https://bitbucket.org/amotus/fundamentum-edge-proto
 
-### Exemple (en Go)
+### Sample (in Go)
 
-Les dépendances Go utilisées:
+Go dependencies:
 
 ```
 google.golang.org/grpc v1.70.0
 google.golang.org/protobuf v1.36.1
 ```
 
-Autres outils:
+Other tools:
 
 [Protoc](https://protobuf.dev/installation/)
 
-Générer les pb à partir des proto:
+Generate .pb go files from the proto files (bash script):
 
 ```shell
 #!/usr/bin/env bash
@@ -179,7 +177,7 @@ set -x
 protoc --proto_path=. --go_out=. --go_opt=paths=source_relative "${opts[@]}" --go-grpc_out=. --go-grpc_opt=paths=source_relative "${grpc_opts[@]}" "${files[@]}"
 ```
 
-Code:
+Go code:
 
 ```go
 package main

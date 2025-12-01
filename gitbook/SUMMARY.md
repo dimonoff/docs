@@ -38,7 +38,7 @@
 
 ## Concepts
 
-* [Transfert de fichiers](concepts/transfert-de-fichiers.md)
+* [File transfers](concepts/file-transfers.md)
 
 ## Fundamentum CLI
 
