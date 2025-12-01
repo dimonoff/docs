@@ -24,89 +24,89 @@ jobs:
           git show "$GITHUB_SHA" > diff.patch || true
           wc -c diff.patch || true
 
-          - name: Build email.html (HTML body) and plain-text fallback
-            id: build_email
-            run: |
-              python3 - <<'PY'
-              import html, os, subprocess, sys
-              
-              # commit info
-              sha = os.environ.get("GITHUB_SHA", "").strip()
-              try:
-                  author = subprocess.check_output(
-                      ["git", "log", "-1", "--pretty=format:%an"], encoding="utf-8", errors="surrogateescape"
-                  ).strip()
-              except Exception:
-                  author = os.environ.get("GITHUB_ACTOR", "")
-              
-              try:
-                  message = subprocess.check_output(
-                      ["git", "log", "-1", "--pretty=format:%B"], encoding="utf-8", errors="surrogateescape"
-                  ).strip()
-              except Exception:
-                  message = ""
-              
-              # Read diff file (if present)
-              try:
-                  with open("diff.patch", "r", encoding="utf-8", errors="surrogateescape") as f:
-                      diff_lines = f.read().splitlines()
-              except FileNotFoundError:
-                  diff_lines = []
-              
-              # Simple styling and classifier
-              css = """
-              body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; margin: 20px; line-height: 1.4; color: #222; }
-              pre { white-space: pre; overflow-x: auto; font-family: monospace; padding: 10px; border-radius: 6px; background: #fff; border: 1px solid #e1e4e8; }
-              .add { background-color: #e6ffed; display: block; }
-              .del { background-color: #ffeef0; display: block; }
-              .hunk { background-color: #f1f8ff; color: #0366d6; display: block; }
-              .file { font-weight: 600; display: block; background: #fafbfc; }
-              .context { display: block; }
-              """
-              
-              def classify(line):
-                  if line.startswith("+++ ") or line.startswith("--- "):
-                      return "file"
-                  if line.startswith("+") and not line.startswith("+++"):
-                      return "add"
-                  if line.startswith("-") and not line.startswith("---"):
-                      return "del"
-                  if line.startswith("@@"):
-                      return "hunk"
-                  return "context"
-              
-              html_lines = []
-              for ln in diff_lines:
-                  esc = html.escape(ln)
-                  cls = classify(ln)
-                  html_lines.append(f"<span class='{cls}'>{esc}</span>")
-              
-              diff_html = "\n".join(html_lines) if html_lines else "<i>(aucun changement)</i>"
-              
-              # Final HTML (French text you asked for)
-              final_html = f"""<!doctype html>
-              <html>
-              <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-              <style>{css}</style></head>
-              <body>
-                <p>Bonjour,</p>
-              
-                <p>La documentation publique a été mise à jour.<br/>
-                Auteur du changement: <b>{html.escape(author)}</b><br/>
-                Message: <b>{html.escape(message)}</b></p>
-              
-                <p><b>--- Changements ---</b></p>
-              
-                <pre>{diff_html}</pre>
-              
-                <p>Ceci est un message automatisé. Veuillez ne pas répondre.</p>
-              </body>
-              </html>
-              """
-              
-              # Plain-text fallback body (keeps the requested French text, includes raw diff)
-              plain_diff = "\n".join(diff_lines) if diff_lines else "(aucun changement)"
-              plain_body = f"""Bonjour,
+      - name: Build email.html (HTML body) and plain-text fallback
+        id: build_email
+        run: |
+          python3 - <<'PY'
+          import html, os, subprocess, sys
+          
+          # commit info
+          sha = os.environ.get("GITHUB_SHA", "").strip()
+          try:
+              author = subprocess.check_output(
+                  ["git", "log", "-1", "--pretty=format:%an"], encoding="utf-8", errors="surrogateescape"
+              ).strip()
+          except Exception:
+              author = os.environ.get("GITHUB_ACTOR", "")
+          
+          try:
+              message = subprocess.check_output(
+                  ["git", "log", "-1", "--pretty=format:%B"], encoding="utf-8", errors="surrogateescape"
+              ).strip()
+          except Exception:
+              message = ""
+          
+          # Read diff file (if present)
+          try:
+              with open("diff.patch", "r", encoding="utf-8", errors="surrogateescape") as f:
+                  diff_lines = f.read().splitlines()
+          except FileNotFoundError:
+              diff_lines = []
+          
+          # Simple styling and classifier
+          css = """
+          body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; margin: 20px; line-height: 1.4; color: #222; }
+          pre { white-space: pre; overflow-x: auto; font-family: monospace; padding: 10px; border-radius: 6px; background: #fff; border: 1px solid #e1e4e8; }
+          .add { background-color: #e6ffed; display: block; }
+          .del { background-color: #ffeef0; display: block; }
+          .hunk { background-color: #f1f8ff; color: #0366d6; display: block; }
+          .file { font-weight: 600; display: block; background: #fafbfc; }
+          .context { display: block; }
+          """
+          
+          def classify(line):
+              if line.startswith("+++ ") or line.startswith("--- "):
+                  return "file"
+              if line.startswith("+") and not line.startswith("+++"):
+                  return "add"
+              if line.startswith("-") and not line.startswith("---"):
+                  return "del"
+              if line.startswith("@@"):
+                  return "hunk"
+              return "context"
+          
+          html_lines = []
+          for ln in diff_lines:
+              esc = html.escape(ln)
+              cls = classify(ln)
+              html_lines.append(f"<span class='{cls}'>{esc}</span>")
+          
+          diff_html = "\n".join(html_lines) if html_lines else "<i>(aucun changement)</i>"
+          
+          # Final HTML (French text you asked for)
+          final_html = f"""<!doctype html>
+          <html>
+          <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+          <style>{css}</style></head>
+          <body>
+            <p>Bonjour,</p>
+          
+            <p>La documentation publique a été mise à jour.<br/>
+            Auteur du changement: <b>{html.escape(author)}</b><br/>
+            Message: <b>{html.escape(message)}</b></p>
+          
+            <p><b>--- Changements ---</b></p>
+          
+            <pre>{diff_html}</pre>
+          
+            <p>Ceci est un message automatisé. Veuillez ne pas répondre.</p>
+          </body>
+          </html>
+          """
+          
+          # Plain-text fallback body (keeps the requested French text, includes raw diff)
+          plain_diff = "\n".join(diff_lines) if diff_lines else "(aucun changement)"
+          plain_body = f"""Bonjour,
 
           La documentation publique a été mise à jour.
           Auteur du changement: { author }
