@@ -39,10 +39,10 @@
 ## Concepts
 
 * [PubSub Bridge](concepts/pubsub-bridge.md)
-* [Transfert de fichiers](concepts/transfert-de-fichiers.md)
+* [File transfers](concepts/file-transfers.md)
 
 ## Fundamentum CLI
 
-* [À propos](fundamentum-cli/a-propos.md)
-* [Démarrage](fundamentum-cli/demarrage.md)
+* [About](fundamentum-cli/about.md)
+* [Getting started](fundamentum-cli/getting-started.md)
 * [Configuration](fundamentum-cli/configuration.md)

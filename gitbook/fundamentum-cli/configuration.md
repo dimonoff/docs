@@ -1,34 +1,33 @@
-# Variables d'environnement
+# Environment variables
 
-Par défaut, le Fundamentum CLI s'exécute en mode interactif (il vous demandera les
-informations dont il a besoin via l'invite de commandes).
+By default, the cli executes in interactive mode (asking for input as needed).
 
-Il est possible d'exécuter le Fundamentum CLI dans un contexte où l'intervention humaine
-est impossible (dans un script, par exemple). Vous devrez alors fournir au Fundamentum CLI
-les valeurs dont il aura besoin via des variables d'environnement. Par exemple:
+It is possible to use the CLI in an environment where user interaction is not possible
+(for example, in a script). In this case, you need to provide what the CLI requires via
+environment variables. Example:
 
 `fun functions list --project 1`
 
-nécessite un contexte, qui contient les infos d'authentification, et le point d'entrée
-des APIs de Fundamentum. C'est donc possible de l'appeler ainsi:
+needs an authentication context. So you can use it that way:
 
 ```
-export FUN_CONTEXT_API_KEY={VOTRE_CLE_D_API}
-export FUN_CONTEXT_NAME=default
+export FUN_CONTEXT_API_KEY={YOUR_API_KEY}
 export FUN_CONTEXT_FUNCTIONS_ENDPOINT=https://functions.fundamentum-iot.com
-export FUN_CONTEXT_FUNDAMENTUM_ENDPOINT=https://api.fundamentum-iot.com
+export FUN_CONTEXT_FUNDAMENTUM_IOT_ENDPOINT=https://api.fundamentum-iot.com
 fun functions list --project 1
 ```
 
-Il est aussi possible de spécifier des variables d'environnement spécifiques à
-certaines commandes. Vous pouvez consulter la [documentation des commandes](https://cli.fundamentum-iot.com/reference/fun.html) à ce sujet (anglais seulement).
+The cli will use an anonymous context made up of values provided by environment variables.
 
-# Emplacement
+It's also possible to specify certain environment variables for certain commands. You can
+view the [command reference](https://cli.fundamentum-iot.com/reference/fun.html) for more information on this (english only).
 
-Le fundamentum CLI cherche sa configuration aux emplacements suivants (ordre de priorité):
+# Configuration location
 
-1. la valeur de `--config`, si spécifié
-2. la valeur de la variable d'environnement `FUN_CONFIG_DIRECTORY`
-3. `$XDG_CONFIG_HOME/fun/` (par défaut, `$HOME/.config/fun/`)
-4. `$XDG_CONFIG_DIRS/fun/` (par défaut, `/etc/xdg/fun/`)
-5. `./.fun/` (pour une configuration portable, dans un emplacement relatif)
+The Fundamentum CLI will look for its configuration files in the following places (highest to lowest priority)
+
+1. the value of `--config`, if specified
+2. the environment variable `FUN_CONFIG_DIRECTORY`
+3. `$XDG_CONFIG_HOME/fun/` (by default, `$HOME/.config/fun/`)
+4. `$XDG_CONFIG_DIRS/fun/` (by default, `/etc/xdg/fun/`)
+5. `./.fun/` (to be portable, by having configuration relative to the cli)
