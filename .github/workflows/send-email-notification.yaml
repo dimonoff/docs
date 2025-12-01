@@ -139,6 +139,6 @@ jobs:
           username: ${{ secrets.SMTP_USER }}
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: La documentation publique a été mise à jour par les développeurs
-          to: ${{ vars.SMTP_TO }}
+          to: ${{ vars.NOTIFICATION_DESTINATION_ADDRESS }}
           body: file://email.txt
           html_body: file://email.html
