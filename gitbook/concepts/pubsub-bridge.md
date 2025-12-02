@@ -231,7 +231,7 @@ For an HTTPS ingoing link, you will need an HTTP client.
   - `device_id`, `registry_id` and `version` become headers  
   - `data` becomes the message body
 
-  When a message is received on the selected PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body.
+    When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body.
 </details>
 
 <details>
@@ -272,5 +272,5 @@ For an HTTPS ingoing link, you will need an HTTP client.
   - `device_id`, `registry_id` and `version` become headers  
   - `data` becomes the message body
 
-  When a message is received on the selected PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body.
+  When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body.
 </details>
