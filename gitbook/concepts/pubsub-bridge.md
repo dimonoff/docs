@@ -174,9 +174,9 @@ To use an MQTT(S) connector, you will need an MQTT server accessible from the In
 
 ![](../.gitbook/assets/pubsubbridge-http.svg)
 
-For an HTTPS ingoing link, you will need an HTTPS server accessible from the Internet and a route that accepts the POST method. A request will be made to this route for each message to be transmitted.
+For an HTTPS outgoing link, you will need an HTTPS server accessible from the Internet and a route that accepts the POST method. A request will be made to this route for each message to be transmitted.
 
-For an HTTPS outgoing link, you will need an HTTP client.
+For an HTTPS ingoing link, you will need an HTTP client.
 
 <details>
   <summary>Hub</summary>
