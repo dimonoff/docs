@@ -71,7 +71,7 @@ To use an MQTT(S) connector, you will need an MQTT server accessible from the In
 
   1. Navigate to **Connectors**  
   2. Click **New Connector**  
-  3. Select the adapter type (MQTT or MQTTS)  
+  3. Select the adapter type (MQTT or MQTTS)
   4. Fill in the fields  
   5. Click **Save**
 
@@ -99,7 +99,7 @@ To use an MQTT(S) connector, you will need an MQTT server accessible from the In
 
   #### 4. Publish or subscribe
 
-  To publish on an ingoing link, publish a message to your MQTT broker on the topic chosen when creating the link. Expected format:
+  To publish on an ingoing link, publish a message to your broker on the MQTT topic chosen when creating the link. Expected format:
 
   ```json
   {
@@ -113,7 +113,7 @@ To use an MQTT(S) connector, you will need an MQTT server accessible from the In
   - `device_id`, `registry_id` and `version` become headers  
   - `data` becomes the message body
 
-  To receive messages from an outgoing link, subscribe to the chosen *topic* on your MQTT broker with the client of your choice. Messages received on the PubSub topic are forwarded as-is to this topic.
+To receive messages from an outgoing link, subscribe to the chosen MQTT topic on your broker with the client of your choice. Messages received on the **PubSub** topic are forwarded as-is to this **MQTT** topic.
 </details>
 
 <details>
@@ -169,14 +169,14 @@ To use an MQTT(S) connector, you will need an MQTT server accessible from the In
   - `device_id`, `registry_id` and `version` become headers  
   - `data` becomes the message body
 
-  To receive messages from an outgoing link, subscribe to the chosen topic on your MQTT broker with the client of your choice. Messages received on the PubSub topic are forwarded as-is to this topic.
+  To receive messages from an outgoing link, subscribe to the chosen MQTT topic on your broker with the client of your choice. Messages received on the **PubSub** topic are forwarded as-is to this **MQTT** topic.  
 </details>
 
 ### HTTPS
 
 ![](../.gitbook/assets/pubsubbridge-http.svg)
 
-For an HTTPS outgoing link, you will need an HTTPS server accessible from the Internet and a route that accepts the POST method. A request will be made to this route for each message to be transmitted.
+For an HTTPS outgoing link, you will need an HTTPS server accessible from the Internet and a route that accepts the POST method. For each message that needs to be forwarded, a request will be sent to this route with the message as a body.
 
 For an HTTPS ingoing link, you will need an HTTP client.
 
