@@ -50,6 +50,8 @@ To use an MQTT(S) connector, you will need an MQTT server accessible from the In
 <details>
   <summary>Hub</summary>
 
+  Fundamentum's hub is accessible [here](https://hub.fundamentum-iot.com/). The PubSub bridge uses its [Connectors](https://hub.fundamentum-iot.com/connectors) and [PubSub](https://hub.fundamentum-iot.com/pub-sub-topics) pages which can be accessed using the sidebar on the left of the page. The **Connectors** page handles both connectors and links while the **PubSub** page handles PubSub topics.
+
   #### 1. Create the connector
 
   For MQTT connectors, the following fields are available:  
@@ -181,6 +183,8 @@ For an HTTPS ingoing link, you will need an HTTP client.
 <details>
   <summary>Hub</summary>
 
+  Fundamentum's hub is accessible [here](https://hub.fundamentum-iot.com/). The PubSub bridge uses its [Connectors](https://hub.fundamentum-iot.com/connectors) and [PubSub](https://hub.fundamentum-iot.com/pub-sub-topics) pages which can be accessed using the sidebar on the left of the page. The **Connectors** page handles both connectors and links while the **PubSub** page handles PubSub topics.
+  
   #### 1. Create the connector
 
   HTTPS connectors have the following fields (used only for outgoing links):
