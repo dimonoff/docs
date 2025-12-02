@@ -136,7 +136,7 @@ jobs:
           server_address: smtp.mailgun.org
           server_port: 587
           from: noreply@dimonoff.com
-          username: ${{ secrets.SMTP_USER }}
+          username: ${{ vars.SMTP_USER }}
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: La documentation publique a été mise à jour par les développeurs
           to: ${{ vars.NOTIFICATION_DESTINATION_ADDRESS }}
