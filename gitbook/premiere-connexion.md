@@ -1,44 +1,43 @@
 ---
-description: Comment avoir accès à Fundamentum ?
+description: How can I access Fundamentum?
 ---
 
-# Première connexion
+# First login
 
-Cette section décrit les étapes à suivre pour qu’un nouvel utilisateur puisse accéder à la plateforme Fundamentum.\
+This section describes the steps a new user must follow to access the Fundamentum platform.\
 \
-**1. Invitation par un des administrateurs du projet (licence)**
+**1. Invitation from a project administrator (license)**
 
-L’administrateur d'un projet (licence) au sein d'une organisation est responsable de la gestion des comptes et des permissions des utilisateurs.
-
-Une fois le compte créé, le nouvel utilisateur reçoit automatiquement une **invitation par courriel** pour rejoindre la plateforme.\
+A project administrator (license) within an organization is responsible for managing user accounts and permissions.\
+Once the account has been created, the new user automatically receives an email invitation to join the platform.\
 \
-**2. Acceptation de l’invitation**
+**2. Accepting the invitation**
 
-Le nouvel utilisateur doit :
+The new user must:
 
-2.1 Ouvrir le courriel d’invitation reçu.
+2.1 Open the invitation email received.
 
-2.2 Cliquer sur le lien fourni pour compléter votre compte.
+2.2 Click the link provided to complete their account setup.
 
 \
-2.3 Suivre les instructions et créer un mot de passe personnel.
+2.3 Follow the instructions to set a personal password.
 
-<figure><img src=".gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
-Le mot de passe doit respecter ces critères:
+The password must meet the following criteria:
 
-* minimum 8 caractères
-* minimum 2 lettres avec une majuscule et une minuscule
-* minimum 1 chiffre
-* minimum 1 caractère spécial
+* minimum 8 characters
+* minimum 2 letters, one uppercase and one lowercase
+* minimum 1 number
+* minimum 1 special character
 
-2.4 Cliquer sur Enregistrer
-
-<figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+2.4 Click Save
 
 **3. Connexion à la plateforme Fundamentum**
 
-Une fois le compte activé, l’utilisateur peut se rendre sur l’adresse suivante pour se connecter\
+Once the account has been activated, the user can go to the following address to log in\
 [https://oauth.fundamentum-iot.com/authx/login](https://oauth.fundamentum-iot.com/authx/login)
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>

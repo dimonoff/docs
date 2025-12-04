@@ -4,9 +4,7 @@ La gestion des utilisateurs est faite à partir du menu 'Utilisateurs' dans le m
 
 <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 **Créer un nouvel utilisateur**
 
@@ -14,8 +12,7 @@ La gestion des utilisateurs est faite à partir du menu 'Utilisateurs' dans le m
 
     <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
-    \
-
+    \\
 
     <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 2. **Remplir les champs du formulaire :**
@@ -28,4 +25,3 @@ La gestion des utilisateurs est faite à partir du menu 'Utilisateurs' dans le m
    L’utilisateur recevra un **lien d’activation** lui permettant d’accepter l’invitation et de rejoindre le projet avec le rôle qui lui a été attribué.
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
-

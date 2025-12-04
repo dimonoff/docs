@@ -1,4 +1,4 @@
 # Notifications
 
-* L’icône de notifications (cloche) se trouve près du coin en haut à droite de la fenêtre qui sert à alerter l'utilisateur de nouvelles informations importantes.\
-  ![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
+* The notification icon (bell) is located near the top right corner of the window and is used to alert the user to important new information.\
+  ![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png>)

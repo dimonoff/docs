@@ -1,12 +1,13 @@
-# Langue, notifications, icône du cube
+# Language, notifications, cube icon
 
-Cette section regroupe plusieurs icônes permettant d’accéder rapidement aux principales fonctions de l’application. Elle comprend :
+This section contains several icons that provide quick access to the application's main features. \
+It includes:
 
-* **Langue** : pour changer la langue d’affichage de l’interface.
-* **Notifications** : pour consulter les alertes ou messages récents.
-* **Mon compte** : pour accéder aux informations de votre profil utilisateur.
-* **L'icône  de cube** : pour changer le projet, basculer vers IoT Hub ou se déconnecter
+* **Language**: to change the display language of the interface.
+* **Notifications** : to view recent alerts or messages.
+* **My account** : to access the user profile information.
+* **The cube icon**: to change the project, switch to IoT Hub, or log out
 
-Les fonctionnalités de chaque icône seront détaillées dans les sections suivantes.
+The features of each icon will be detailed in the following sections.
 
 <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>

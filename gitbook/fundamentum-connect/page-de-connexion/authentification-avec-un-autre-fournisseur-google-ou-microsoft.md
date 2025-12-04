@@ -1,11 +1,12 @@
-# Authentification avec un autre fournisseur (Google ou Microsoft)
+# Authentication with another provider (Google or Microsoft)
 
-Fundamentum prend également en charge la connexion via des **fournisseurs d’identité externes**, tels que **Google** ou **Microsoft**.\
-Cette méthode permet aux utilisateurs de s’authentifier en utilisant leurs identifiants professionnels ou personnels existants, sans avoir à créer un mot de passe spécifique à la plateforme.
+Fundamentum also supports login via external identity providers, such as Google or Microsoft.\
+This method allows users to authenticate using their existing professional or personal credentials, without having to create a platform-specific password.
 
-1. Sur la page de connexion, cliquez sur **« Se connecter avec Google »** ou **« Se connecter avec Microsoft »**.
-2. Une fenêtre d’authentification sécurisée du fournisseur choisi s’ouvrira.
-3. Saisissez vos identifiants habituels (adresse courriel et mot de passe associés à votre compte Google ou Microsoft).
-4.  Une fois l’authentification réussie, vous serez automatiquement redirigé vers la plateforme.\\
+1. On the sign-in page, click “Log in with Google” or “Log in with Microsoft.”
+2. A secure authentication window from the selected provider will open.
+3. Enter your usual login details (email address and password associated with your Google or Microsoft account).
+4.  Once authentication is successful, you will be automatically redirected to the platform.\
+    <br>
 
-    <figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>

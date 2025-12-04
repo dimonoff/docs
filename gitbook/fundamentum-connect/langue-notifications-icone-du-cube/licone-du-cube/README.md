@@ -1,7 +1,10 @@
-# L'icône du cube
+# Cube icon
 
-* L’**icône du cube**, située en haut à droite de l’écran, permet d’accéder à un petit menu d’actions rapides. En cliquant dessus, vous pouvez :
-  * **Changer de projet** – Sélectionnez un autre projet sur lequel travailler.
-  * **Accéder à l’IoT Hub** – Ouvrez un lien direct vers la plateforme IoT Hub. Voir la documentation à la section Fundamentum Hub.
-  * **Se déconnecter** – Fermez votre session en toute sécurité.\
-    ![](<../../../.gitbook/assets/image (2) (1).png>)
+*   The cube icon, located at the top right of the screen, provides access to a small menu of quick actions. By clicking on it, you can:
+
+    * **Switch project** – Select another project to work on.
+    * **Access the IoT Hub** – Open a direct link to the IoT Hub platform. See the documentation in the Fundamentum Hub section.
+    * **Log out** – Securely end your session.
+
+    \
+    ![](<../../../.gitbook/assets/image (8).png>)
