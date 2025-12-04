@@ -225,7 +225,7 @@ For an HTTPS ingoing link, you will need an HTTP client.
 
   #### 4. Publish or subscribe
 
-  To publish on an ingoing link, use the [API](https://api.fundamentum-iot.com/docs#/operations/publishLink) with the link identifier and the connector identifier. 
+  To publish on an ingoing link, use the [API](https://api.fundamentum-iot.com/docs#/operations/publishToLink) with the link identifier and the connector identifier. 
 
   The request body will be transformed into a message:  
   - `device_id`, `registry_id` and `version` become headers  
@@ -266,7 +266,7 @@ For an HTTPS ingoing link, you will need an HTTP client.
 
   #### 4. Publish or subscribe
 
-  To publish on an ingoing link, use the [API](https://api.fundamentum-iot.com/docs#/operations/publishLink).
+  To publish on an ingoing link, use the [API](https://api.fundamentum-iot.com/docs#/operations/publishToLink).
 
   The request body will be transformed into a message:  
   - `device_id`, `registry_id` and `version` become headers  
