@@ -14,4 +14,4 @@ Fundamentum includes a web application. Here are some examples of browsers that 
 
 The home page will appear.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

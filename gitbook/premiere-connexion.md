@@ -38,6 +38,6 @@ The password must meet the following criteria:
 Once the account has been activated, the user can go to the following address to log in\
 [https://oauth.fundamentum-iot.com/authx/login](https://oauth.fundamentum-iot.com/authx/login)
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>

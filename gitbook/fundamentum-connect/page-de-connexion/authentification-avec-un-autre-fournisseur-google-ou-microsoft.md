@@ -9,4 +9,4 @@ This method allows users to authenticate using their existing professional or pe
 4.  Once authentication is successful, you will be automatically redirected to the platform.\
     <br>
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>

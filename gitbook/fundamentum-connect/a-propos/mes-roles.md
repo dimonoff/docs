@@ -1,25 +1,26 @@
-# Mes rôles
+# My roles
 
-La section 'Mes rôles' présente les informations liées aux droits d’accès et aux autorisations attribuées à l’utilisateur sur Fundamentum.\
-Elle permet de savoir quel rôle est actuellement associé à votre compte, qui vous l’a attribué, ainsi que le statut de votre compte et les informations d’invitation.
+The **“My Roles”** section displays information related to the access rights and permissions assigned to the user on Fundamentum.\
+It allows you to view which role is currently associated with your account, who assigned it, as well as your account status and invitation details.
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-**Rôles**: Ils sont des ensembles d'autorisations qui peuvent être attribués aux utilisateurs.
-
-Les administrateurs de la plateforme peuvent gérer les rôles systèmes, qui peuvent être attribués aux administrateurs.
-
-Voici les rôles systèmes par défaut disponibles dans Fundamentum :
-
-* **Les chefs de projet (Project Manager)** peuvent gérer les rôles du projet, qui peuvent être attribués aux utilisateurs de ce projet.
-* **Les gestionnaires de licences (License Manager)** peuvent gérer les rôles de licence, qui peuvent être attribués aux utilisateurs de cette licence.
-
-Le numéro entre parenthèse correspond à l'identifiant unique du projet à lequel le rôle a été attribué. L'identifiant du projet se retrouve également dans le menu Projet, onglet Configuration.
-
-**From**: Désigne la personne qui a assigné ce rôle à cet utilisateur\
 \
-**Statut de l'invitation**: \
-En attente de réponse: L'utilisateur a reçu l'invitation par e-mail et n'a pas encore répondu.\
-Terminé: L'utilisateur a terminé la configuration de son compte et accepté le rôle attribué dans l'invitation.
+**Roles**: These are sets of permissions that can be assigned to users.\
+Platform administrators can manage system roles, which can be assigned to administrators.
 
-**Invited**: Désigne la date et l'heure de l'acceptation de l'invitation
+Here are the default system roles available in Fundamentum:
+
+* Project Managers can manage project roles, which can be assigned to users of that project.
+* License Managers can manage license roles, which can be assigned to users of that license.
+
+The number in parentheses corresponds to the unique ID of the project to which the role has been assigned. The project ID can also be found in the Project menu, Configuration tab.
+
+**From**: Refers to the person who assigned this role to this user.\
+\
+**Invitation status:**
+
+* Pending response: The user has received the invitation by email and has not yet responded.
+* Completed: The user has completed the account setup and accepted the role assigned in the invitation.<br>
+
+**Invited**: Refers to the date and time when the invitation was accepted.

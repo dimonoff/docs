@@ -1,21 +1,27 @@
-# Clés d'API
+# API keys
 
-Cette section s'adresse principalement aux développeurs qui souhaitent utiliser le client API de Fundamentum.
+This section is primarily intended for developers who wish to use the Fundamentum API client.
 
-Les clés API permettent l'authentification des applications lors de l'accès aux API.
+API keys enable application authentication when accessing APIs.
 
-Ils servent à suivre l'utilisation, contrôler l'accès, limiter le débit et faciliter l'intégration.
+They are used to track usage, control access, limit data rates, and facilitate integration.
 
-#### Création d’une nouvelle clé
+Creating a new key
 
-1. Cliquez sur le bouton '**Générer une nouvelle clé'**.
-2. Donnez un **nom explicite** à la clé.
-3. Cliquez sur '**Save'**.
+1. Click on the ‘Create new token’ button.
 
-Une clé unique est alors générée.
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-⚠️ **Important :** copiez la clé immédiatement après sa création — elle ne sera plus visible par la suite pour des raisons de sécurité.
+1.  Give the key a name.<br>
 
-<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+2. Click on '**Save'**.
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+A unique key is generated.<br>
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+\
+\
+⚠️**Important**: copy the key immediately after creating it—it will no longer be visible afterward for security reasons.
+
