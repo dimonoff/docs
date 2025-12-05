@@ -1,6 +1,8 @@
 # Licences
 
-Cette section permet de gérer les autorisations des utilisateurs ainsi que leurs droits d’accès à la plateforme en fonction de leurs plans d’abonnement (licences).
+Cette section permet de gérer les autorisations des utilisateurs ainsi que leurs droits d’accès à la plateforme en fonction de leurs plans d’abonnement (licences).<br>
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 Comment créer une licence :
 
@@ -16,8 +18,6 @@ Comment créer une licence :
 
 <figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-
-
 La nouvelle licence sera alors ajoutée à la liste et pourra être attribuée aux utilisateurs pour gérer leurs accès et permissions sur la plateforme.
 
-\
+\\
