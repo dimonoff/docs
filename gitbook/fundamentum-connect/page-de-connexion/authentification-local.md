@@ -1,10 +1,13 @@
-# Authentification local
+# Local authentication
 
-Fundamentum permet de se connecter à l’aide d’un **compte local**, en utilisant une **adresse courriel** et un **mot de passe**.\
-Cette méthode ne dépend d’aucun fournisseur d’identité externe et peut être utilisée avec **n’importe quelle adresse courriel valide**.
+Fundamentum allows you to log in using a local account, with an email address and password.\
+This method doesn't depend on any external identity provider and can be used with any valid email address.
 
-1. Saisissez votre **adresse courriel** dans le champ prévu à cet effet.
-2. Entrez votre **mot de passe** associé à ce compte.
-3. Cliquez sur le bouton '**Go'** pour accéder à la plateforme.
+1. Enter your email address in the field provided.
+2. Enter the password associated with this account.
+3.  Click on the ‘Go’ button to access the platform.<br>
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+4.

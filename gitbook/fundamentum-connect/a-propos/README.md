@@ -1,11 +1,9 @@
-# Mon compte
+# My account
 
-La page 'Mon compte' contient toutes les données relatives à votre compte personnel :
+The **“My Account”** page contains all the information related to your personal account:
 
-Vos 'Renseignements d'identification' vous permettent de modifier votre nom et votre mot de passe.
+* **Credentials** allows you to update your name, Email, language and password.
+* **My roles** (personal invitations for the current project) display the different roles that have been assigned to a user.
+* **API keys** can be used with other services to authenticate and make requests.
 
-Vos rôles (invitation personnelle pour le projet en cours) représentent les différents rôles qui vous ont été attribués.
-
-Vos clés API peuvent être utilisées dans d'autres services pour vous authentifier et effectuer des requêtes.
-
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

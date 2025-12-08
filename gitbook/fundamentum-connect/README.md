@@ -1,7 +1,7 @@
 ---
-description: Permissions et  accès.
+description: Permissions and access.
 ---
 
-# Fundamentum Connect - En cours de rédaction
+# Fundamentum Connect
 
-**Connect** est l'application qui gère les permissions et les accès. Elle vous offre un contrôle granulaire sur qui peut accéder à vos appareils et quelles actions peuvent être effectuées. Avec **Connect**, vous pouvez définir des rôles, attribuer des permissions spécifiques et garantir la sécurité de votre réseau IoT.
+**Connect** is the application responsible for managing access and permissions. It provides fine-grained control over who can access your devices and which actions they are authorized to perform. With Connect, you can define roles, assign specific permissions, and ensure the security of your IoT network.

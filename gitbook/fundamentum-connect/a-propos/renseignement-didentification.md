@@ -1,50 +1,51 @@
-# Renseignement d'identification
+# Credentials
 
-La section '**Renseignements d’identification'** permet à chaque utilisateur de consulter et de modifier les informations personnelles associées à son compte sur la plateforme.\
-Elle est accessible depuis le menu "**Mon compte"**, disponible après connexion.\
+The **“Credentials”** section allows users to view and update the personal information associated with their account on the platform.\
+It can be accessed from the **“My Account”** menu after logging in.\
 \
-**1. Renseignements généraux**
+**1. General Information**
 
-Dans cette partie, l’utilisateur peut consulter et mettre à jour ses informations de base :
+In this section, users can view and update their basic information:
 
-*   Nom & Prénom et Adresse courriel\
+* First and last name
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+#### <sub>2. Preferences</sub>
 
-#### <sub>2. Préférences</sub>
-
-La section **Préférences** permet de personnaliser la langue d’affichage de la plateforme.\
+The Preferences section allows you to customize the display language of the platform.\
 \
-**3. Changer le mot de passe**
+**3. Change password**
 
-Cette option permet de **mettre à jour votre mot de passe** à tout moment pour renforcer la sécurité de votre compte.\
-**3.1** Entrer le mot de passe actuel\
-**3.2** Saisir le nouveau mot de passe
+This option allows you to update your password at any time to enhance the security of your account.\
+**3.1** Enter the current password\
+**3.2** Enter the new password
 
-Assurez-vous que le mot de passe respecte les critères de sécurité suivants :&#x20;
+Ensure that the password meets the following security criteria:
 
-**Longueur minimale** : 8 caractères.
+Minimum length: 8 characters.
 
-**Caractères requis** : un mélange de lettres (majuscules et minuscules), de chiffres et de caractères spéciaux (par exemple, !, @, #, $, %, etc.).
+Required characters: a combination of letters (upper and lower case), numbers, and special characters (e.g., !, @, #, $, %, etc.).
 
-**3.3** Confirmer le nouveau mot de passe
+**3.3** Confirm the new password
 
-**3.4** Sauvegarder
+**3.4** Save
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 \
-**4. Fournisseurs d'identité**\
-Cette section permet à l’utilisateur de **lier son compte à un fournisseur d’identité externe**, tel que **Google** ou **Microsoft**. Grâce à cette fonctionnalité, il est possible de se connecter au logiciel en utilisant l'adresse courriel et mot de passe associés à votre compte Google ou Microsoft
+**4. Identity Providers**\
+This section allows users to link their account to an external identity provider, such as Google or Microsoft. With this feature, you can log in to the software using the email address and password associated with your Google or Microsoft account.
 
-**Fonctionnement :**
+**Operation:**
 
-* Si le compte n’est pas encore lié, le statut affiché est **« Non lié »**.
-* En cliquant sur le bouton **« Lier à Google »** ou **« Lier à Microsoft »**, l’utilisateur est redirigé vers la page d’authentification correspondante.
+* If the account is not yet linked, the status displayed is “Not linked.”
+* By clicking on the “Link to Google” or “Link to Microsoft” button, the user is redirected to the corresponding authentication page.
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<br>
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-* Une fois la liaison effectuée, l’utilisateur pourra se connecter directement via le fournisseur sélectionné.
+* Once the connection has been established, the user will be able to connect directly via the selected provider.

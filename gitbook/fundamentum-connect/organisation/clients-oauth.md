@@ -1,3 +1,3 @@
 # Clients OAuth
 
-<kbd>**Cette section est réservée aux administrateurs de Dimonoff.**</kbd>
+<kbd>**This section is reserved for Dimonoff administrators!**</kbd>

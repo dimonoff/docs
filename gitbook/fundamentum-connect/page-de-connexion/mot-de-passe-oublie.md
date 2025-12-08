@@ -1,10 +1,13 @@
-# Mot de passe oublié
+# Forgot your password?
 
-Si vous avez oublié votre mot de passe, vous pouvez facilement en définir un nouveau grâce à la fonctionnalité '**Mot de passe oublié'** disponible sur la page de connexion.
+If you have forgotten your password, you can easily set a new one using the ‘Forgot your password’ feature available on the login page.
 
-1. Cliquez sur le lien '**Mot de passe oublié'** situé sous le champ de saisie du mot de passe.
-2. Saisissez l’**adresse courriel associée à votre compte** dans le champ prévu à cet effet.
-3. Cliquez sur le bouton '**GO**'.
+1. Click on the ‘Forgot your password’ link located below the password field.
+2. Enter the email address associated with your account in the field provided.
+3. Click on the ‘GO’ button.
 
-Un **courriel de réinitialisation** vous sera alors envoyé à l’adresse indiquée.\
-![](<../../.gitbook/assets/image (14) (1).png>)![](<../../.gitbook/assets/image (15) (1).png>)
+A reset email will then be sent to the address you provided.
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure></div>
+
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
