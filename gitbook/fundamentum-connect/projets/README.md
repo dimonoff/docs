@@ -9,5 +9,3 @@ Each project has a unique identifier and allows you to:
   ![](<../../.gitbook/assets/image (48).png>)
 
 Projects provide a structured framework for separating and managing resources based on specific applications, teams, or use cases.<br>
-
-<figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
