@@ -28,6 +28,7 @@
     * [Service Accounts](fundamentum-connect/projets/comptes-de-service.md)
 * [Fundamentum Hub - pending](fundamentum-hub-en-cours-de-redaction/README.md)
   * [Login Page (Hub)](fundamentum-hub-en-cours-de-redaction/a-propos.md)
+  * [Basics](fundamentum-hub-en-cours-de-redaction/basics.md)
   * [Registry](fundamentum-hub-en-cours-de-redaction/enregistrement.md)
   * [Device Types](fundamentum-hub-en-cours-de-redaction/types-dappareils.md)
   * [Alert Rules](fundamentum-hub-en-cours-de-redaction/alert-rules.md)
