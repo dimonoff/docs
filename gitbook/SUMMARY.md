@@ -36,6 +36,10 @@
 * [API](api.md)
 * [Notes de version](notes-de-version.md)
 
+## System Status and Availability
+
+* [Application Uptime](system-status-and-availability/application-uptime.md)
+
 ## Concepts
 
 * [File transfers](concepts/file-transfers.md)
