@@ -3,7 +3,7 @@
 * [About](README.md)
 * [First login](premiere-connexion.md)
 * [Fundamentum Connect](fundamentum-connect/README.md)
-  * [Login page](fundamentum-connect/page-de-connexion/README.md)
+  * [Login page (Connect)](fundamentum-connect/page-de-connexion/README.md)
     * [Local authentication](fundamentum-connect/page-de-connexion/authentification-local.md)
     * [Authentication with another provider (Google or Microsoft)](fundamentum-connect/page-de-connexion/authentification-avec-un-autre-fournisseur-google-ou-microsoft.md)
     * [Forgot your password?](fundamentum-connect/page-de-connexion/mot-de-passe-oublie.md)
