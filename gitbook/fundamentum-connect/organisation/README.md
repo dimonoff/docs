@@ -1,8 +1,7 @@
-# Organization (next)
+# Organization
 
-Une organisation permet de structurer et gérer les ressources, les permissions et les données propres à chaque entité. Elle facilite la collaboration entre les membres, la gestion des droits d’accès et la personnalisation des paramètres au sein de l’organisation.\
+An organization allows you to structure and manage resources, permissions, and data specific to each entity. It also facilitates member collaboration, access rights management, and the customization of settings within the organization.\
 ![](<../../.gitbook/assets/image (45) (1).png>)\
 \
-Fundamentum dispose de plusieurs couches de données qui permettent une gestion à plusieurs niveaux et une intégration dans plusieurs types d'autres systèmes.<br>
-
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+Fundamentum includes several layers of data that support multi-level management and integration with various other types of systems.\
+<img src="../../.gitbook/assets/image (69).png" alt="" data-size="original">
