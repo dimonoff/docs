@@ -26,7 +26,7 @@
     * [Licences](fundamentum-connect/projets/licences.md)
     * [Users](fundamentum-connect/projets/utilisateurs.md)
     * [Service Accounts](fundamentum-connect/projets/comptes-de-service.md)
-* [Fundamentum Hub - En cours de rédaction](fundamentum-hub-en-cours-de-redaction/README.md)
+* [Fundamentum Hub - pending](fundamentum-hub-en-cours-de-redaction/README.md)
   * [À propos](fundamentum-hub-en-cours-de-redaction/a-propos.md)
   * [Enregistrement](fundamentum-hub-en-cours-de-redaction/enregistrement.md)
   * [Types d'appareils](fundamentum-hub-en-cours-de-redaction/types-dappareils.md)
