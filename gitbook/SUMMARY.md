@@ -36,7 +36,7 @@
   * [PubSub](fundamentum-hub-en-cours-de-redaction/pubsub.md)
   * [Connectors](fundamentum-hub-en-cours-de-redaction/connecteurs.md)
 * [API](api.md)
-* [Notes de version](notes-de-version.md)
+* [Release Notes](notes-de-version.md)
 
 ## System Status and Availability
 
