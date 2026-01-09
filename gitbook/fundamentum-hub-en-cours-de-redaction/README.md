@@ -1,5 +1,5 @@
 ---
-description: Device mangement
+description: Device management
 ---
 
 # Fundamentum Hub - pending
