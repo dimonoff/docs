@@ -1,13 +1,11 @@
-# Projets - En cours de rédaction
+# Project
 
-Dans Fundamentum, les projets servent à organiser et gérer les ressources et services.\
-Chaque projet possède un identifiant unique et permet de :
+In Fundamentum, projects are used to organize and manage resources and services.\
+Each project has a unique identifier and allows you to:
 
-* Créer, configurer et déployer différents services et ressources.
-* Gérer les droits d’accès pour les membres.
-* Suivre la facturation et l’allocation des ressources.\
+* Create, configure, and deploy various services and resources.
+* Manage member access rights.
+* Track billing and resource allocation.\
   ![](<../../.gitbook/assets/image (48).png>)
 
-Les projets offrent un cadre structuré pour séparer et gérer les ressources selon les applications, les équipes ou des cas d’usage spécifiques.<br>
-
-<figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+Projects provide a structured framework for separating and managing resources based on specific applications, teams, or use cases.<br>

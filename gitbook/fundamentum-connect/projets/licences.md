@@ -1,23 +1,23 @@
 # Licences
 
-Cette section permet de gérer les autorisations des utilisateurs ainsi que leurs droits d’accès à la plateforme en fonction de leurs plans d’abonnement (licences).<br>
+This section allows you to manage user permissions and their access rights to the platform based on their subscription plans (licenses).<br>
 
 <figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
-Comment créer une licence :
+<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
-1. Cliquer sur le bouton Créer une licence en haut à droite de la page.
+**How to create a license:**
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+1. Click on the Create License button at the top right of the page.
 
-2. Remplir les informations dans le formulaire (nom de la licence, type).
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+2. Fill in the information in the form (license name, type).
 
-3. Valider la création en cliquant sur Créer une licence.
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+3. Confirm the creation by clicking Create License.
 
-La nouvelle licence sera alors ajoutée à la liste et pourra être attribuée aux utilisateurs pour gérer leurs accès et permissions sur la plateforme.
+<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
-\\
+The new license will then be added to the list and can be assigned to users to manage their access and permissions on the platform.

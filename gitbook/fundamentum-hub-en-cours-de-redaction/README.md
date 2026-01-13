@@ -1,19 +1,7 @@
 ---
-description: L’application pour gérer les appareils.
+description: Device management
 ---
 
-# Fundamentum Hub
+# Fundamentum Hub - pending
 
-Explication des configurations.&#x20;
-
-Explication des commandes et des actions.&#x20;
-
-Explication des states (états ?).&#x20;
-
-Configuration d’un gateway.&#x20;
-
-Utilisation du PubSub pour réagir à des données.&#x20;
-
-Création et gestion d’alertes.&#x20;
-
-Connecteurs.&#x20;
+**Hub** is the application dedicated to device management. It enables you to monitor, control, and configure your IoT devices in an intuitive and efficient way. Whether you manage a single device or an entire fleet, Hub simplifies daily operations and helps maintain optimal performance.
