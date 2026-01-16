@@ -51,3 +51,36 @@ The search can be performed using either the email address or the user's name.\
     The user will receive an activation link allowing them to accept the invitation and join the project with the role that has been assigned to them.
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+\
+**Modify a user**
+
+#### User whose profile is not yet completed or validated
+
+If the user’s profile has not yet been completed/validated, an **Edit** button is available.\
+Click **Edit**.\
+You can then modify the following fields:
+
+* Role
+* Last name
+* First name
+* Email address
+* Language
+
+Save the changes.
+
+#### User whose profile is completed and account is validated
+
+If the user’s profile is already completed and the account is validated, the **Edit** button is no longer available.
+
+In this case, it is not possible to directly modify the existing user.\
+You must:
+
+* Create a new user.
+* Fill in and edit the following fields:
+  * Role
+  * Last name
+  * Email address
+  * Language
+
+The original user will remain unchanged, and the new user must be used instead.
