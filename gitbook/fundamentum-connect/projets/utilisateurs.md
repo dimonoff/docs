@@ -84,3 +84,5 @@ You must:
   * Language
 
 The original user will remain unchanged, and the new user must be used instead.
+
+A user can appear multiple times in the list if he has different roles.
