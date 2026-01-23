@@ -2,10 +2,6 @@
 
 This section allows you to manage user permissions and their access rights to the platform based on their subscription plans (licenses).<br>
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
-
-<br>
-
 <figure><img src="../../.gitbook/assets/diag-EN.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
