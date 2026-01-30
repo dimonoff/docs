@@ -8,4 +8,8 @@ Each project has a unique identifier and allows you to:
 * Track billing and resource allocation.\
   ![](<../../.gitbook/assets/image (48).png>)
 
-Projects provide a structured framework for separating and managing resources based on specific applications, teams, or use cases.<br>
+Projects provide a structured framework for separating and managing resources based on specific applications, teams, or use cases.
+
+
+
+<figure><img src="../../.gitbook/assets/Projects.png" alt=""><figcaption></figcaption></figure>

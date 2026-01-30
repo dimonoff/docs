@@ -1,5 +1,7 @@
 # Users
 
+<figure><img src="../../.gitbook/assets/Users.png" alt=""><figcaption></figcaption></figure>
+
 User management is done from the ‘Users’ menu in the left sidebar.
 
 <figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
