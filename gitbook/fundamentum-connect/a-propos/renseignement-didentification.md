@@ -9,7 +9,7 @@ In this section, users can view and update their basic information:
 
 * First and last name
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <sub>2. Preferences</sub>
 
@@ -31,7 +31,7 @@ Required characters: a combination of letters (upper and lower case), numbers, a
 
 **3.4** Save
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 **4. Identity Providers**\
@@ -44,7 +44,7 @@ This section allows users to link their account to an external identity provider
 
 <br>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 

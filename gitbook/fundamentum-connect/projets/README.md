@@ -10,6 +10,4 @@ Each project has a unique identifier and allows you to:
 
 Projects provide a structured framework for separating and managing resources based on specific applications, teams, or use cases.
 
-
-
-<figure><img src="../../.gitbook/assets/Projects.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Proj-FR.png" alt=""><figcaption></figcaption></figure>

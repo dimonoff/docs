@@ -37,7 +37,7 @@ The search can be performed using either the email address or the user's name.\
 
 1.  Click on “New User”
 
-    <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -52,7 +52,7 @@ The search can be performed using either the email address or the user's name.\
     After clicking **“Create User”**, an invitation email is automatically sent to the specified address.\
     The user will receive an activation link allowing them to accept the invitation and join the project with the role that has been assigned to them.
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Modify a user**

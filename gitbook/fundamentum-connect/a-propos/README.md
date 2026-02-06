@@ -6,4 +6,4 @@ The **“My Account”** page contains all the information related to your perso
 * **My roles** (personal invitations for the current project) display the different roles that have been assigned to a user.
 * **API keys** can be used with other services to authenticate and make requests.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>

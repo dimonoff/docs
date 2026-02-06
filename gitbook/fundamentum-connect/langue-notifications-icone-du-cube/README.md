@@ -10,4 +10,4 @@ It includes:
 
 The features of each icon will be detailed in the following sections.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>

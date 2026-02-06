@@ -3,7 +3,7 @@
 The **“My Roles”** section displays information related to the access rights and permissions assigned to the user on Fundamentum.\
 It allows you to view which role is currently associated with your account, who assigned it, as well as your account status and invitation details.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Roles**: These are sets of permissions that can be assigned to users.\
