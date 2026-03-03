@@ -12,7 +12,6 @@ needs an authentication context. So you can use it that way:
 
 ```
 export FUN_CONTEXT_API_KEY={YOUR_API_KEY}
-export FUN_CONTEXT_FUNCTIONS_ENDPOINT=https://functions.fundamentum-iot.com
 export FUN_CONTEXT_FUNDAMENTUM_IOT_ENDPOINT=https://api.fundamentum-iot.com
 fun functions list --project 1
 ```
