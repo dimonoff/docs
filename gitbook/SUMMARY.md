@@ -36,10 +36,6 @@
 * [API](api.md)
 * [Release Notes](notes-de-version.md)
 
-## System Status and Availability
-
-* [Application Uptime](system-status-and-availability/application-uptime.md)
-
 ## Concepts
 
 * [PubSub Bridge](concepts/pubsub-bridge.md)
@@ -50,3 +46,11 @@
 * [About](fundamentum-cli/about.md)
 * [Getting started](fundamentum-cli/getting-started.md)
 * [Configuration](fundamentum-cli/configuration.md)
+
+## SUPPORT
+
+* [Contact technical support](support/contact-technical-support.md)
+
+## System Status and Availability
+
+* [Application Uptime](system-status-and-availability/application-uptime.md)
