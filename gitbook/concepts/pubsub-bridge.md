@@ -45,7 +45,7 @@ PubSub topic names must contain only alphanumeric characters and be at least 3 c
 
 ![](../.gitbook/assets/pubsubbridge-mqtt.svg)
 
-To use an MQTT(S) connector, you will need an MQTT server accessible from the Internet as well as an MQTT client to publish or consume messages.
+To use an MQTT(S) connector, you will need an MQTT server accessible from the Internet as well as an MQTT client to publish or consume messages. The MQTT server must support MQTT v5.
 
 <details>
   <summary>Hub</summary>
@@ -106,14 +106,16 @@ To use an MQTT(S) connector, you will need an MQTT server accessible from the In
     "device_id": int,
     "registry_id": int,
     "version": string, // optional
+    "headers": map[string]string, // optional
     "data": string
   }
   ```
 
-  - `device_id`, `registry_id` and `version` become headers  
+  - `device_id`, `registry_id` and `version` become headers
+  - `headers` key-values are added as headers. If any of the previous headers are also used in this field, the value in `headers` is used.
   - `data` becomes the message body
 
-To receive messages from an outgoing link, subscribe to the chosen MQTT topic on your broker with the client of your choice. Messages received on the **PubSub** topic are forwarded as-is to this **MQTT** topic.
+To receive messages from an outgoing link, subscribe to the chosen MQTT topic on your broker with the client of your choice. Messages received on the **PubSub** topic are forwarded as-is to this **MQTT** topic. The message's headers are converted into User Properties.
 </details>
 
 <details>
@@ -162,14 +164,16 @@ To receive messages from an outgoing link, subscribe to the chosen MQTT topic on
     "device_id": int,
     "registry_id": int,
     "version": string, // optional
+    "headers": map[string]string, // optional
     "data": string
   }
   ```
 
-  - `device_id`, `registry_id` and `version` become headers  
+  - `device_id`, `registry_id` and `version` become headers
+  - `headers` key-values are added as headers. If any of the previous headers are also used in this field, the value in `headers` is used.
   - `data` becomes the message body
 
-  To receive messages from an outgoing link, subscribe to the chosen MQTT topic on your broker with the client of your choice. Messages received on the **PubSub** topic are forwarded as-is to this **MQTT** topic.  
+  To receive messages from an outgoing link, subscribe to the chosen MQTT topic on your broker with the client of your choice. Messages received on the **PubSub** topic are forwarded as-is to this **MQTT** topic. The message's headers are converted into User Properties.  
 </details>
 
 ### HTTPS
@@ -228,10 +232,11 @@ For an HTTPS ingoing link, you will need an HTTP client.
   To publish on an ingoing link, use the [API](https://api.fundamentum-iot.com/docs#/operations/publishToLink) with the link identifier and the connector identifier. 
 
   The request body will be transformed into a message:  
-  - `device_id`, `registry_id` and `version` become headers  
+  - `device_id`, `registry_id` and `version` become headers
+  - `headers` key-values are added as headers. If any of the previous headers are also used in this field, the value in `headers` is used.
   - `data` becomes the message body
 
-    When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body.
+    When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body. The message's headers will be converted into HTTP headers and added to the request. If there is a conflict with headers names, the values will be joined into a comma separated list, with the following order: "content-type" > custom header > event's headers.
 </details>
 
 <details>
@@ -269,8 +274,9 @@ For an HTTPS ingoing link, you will need an HTTP client.
   To publish on an ingoing link, use the [API](https://api.fundamentum-iot.com/docs#/operations/publishToLink).
 
   The request body will be transformed into a message:  
-  - `device_id`, `registry_id` and `version` become headers  
+  - `device_id`, `registry_id` and `version` become headers
+  - `headers` key-values are added as headers. If any of the previous headers are also used in this field, the value in `headers` is used.  
   - `data` becomes the message body
 
-  When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body.
+  When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body. The message's headers will be converted into HTTP headers and added to the request. If there is a conflict with headers names, the values will be joined into a comma separated list, with the following order: "content-type" > custom header > event's headers.
 </details>
