@@ -236,7 +236,7 @@ For an HTTPS ingoing link, you will need an HTTP client.
   - `headers` key-values are added as headers. If any of the previous headers are also used in this field, the value in `headers` is used.
   - `data` becomes the message body
 
-    When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body. The message's headers will be converted into HTTP headers and added to the request. If there is a conflict with headers names, the values will be joined into a comma separated list, with the following order: "content-type" > custom header > event's headers.
+  When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body. The message's headers will be converted into HTTP headers and added to the request. Underscores in header names are replaced with dashes to avoid compatibility issues with different tools. If there is a conflict with headers names, the values will be joined into a comma separated list, with the following order: "content-type" > custom header > event's headers.
 </details>
 
 <details>
@@ -278,5 +278,5 @@ For an HTTPS ingoing link, you will need an HTTP client.
   - `headers` key-values are added as headers. If any of the previous headers are also used in this field, the value in `headers` is used.  
   - `data` becomes the message body
 
-  When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body. The message's headers will be converted into HTTP headers and added to the request. If there is a conflict with headers names, the values will be joined into a comma separated list, with the following order: "content-type" > custom header > event's headers.
+  When a message is received on an outgoing link's PubSub topic, an HTTP request is made to the following URL: `POST {Connector Host}/{Link Route}` with the message content as the request body. The message's headers will be converted into HTTP headers and added to the request. Underscores in header names are replaced with dashes to avoid compatibility issues with different tools. If there is a conflict with headers names, the values will be joined into a comma separated list, with the following order: "content-type" > custom header > event's headers.
 </details>
