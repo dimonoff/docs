@@ -1,0 +1,12 @@
+- tag: new
+  label: New
+  color: $primary
+- tag: deprecated
+  label: Retired
+  color: $danger
+- tag: fixed
+  label: Improvements
+  color: $success
+- tag: security
+  label: Security
+  color: yellow
