@@ -1,0 +1,16 @@
+- tag: new
+  label: New releases
+  icon: rocket-launch
+  color: $primary
+- tag: deprecated
+  label: Retired
+  icon: trash-can-xmark
+  color: $info
+- tag: fixed
+  label: Improvements
+  icon: sparkles
+  color: $info
+- tag: security
+  label: Fixes
+  icon: screwdriver-wrench
+  color: $info
