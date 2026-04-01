@@ -1,0 +1,16 @@
+- tag: nouveaute
+  label: Nouveautés
+  icon: rocket-launch
+  color: $primary
+- tag: retire
+  label: Retraits
+  icon: trash-can-xmark
+  color: $info
+- tag: amelioration
+  label: Améliorations
+  icon: sparkles
+  color: $info
+- tag: securite
+  label: Correctifs
+  icon: screwdriver-wrench
+  color: $info
