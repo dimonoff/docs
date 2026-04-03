@@ -20,7 +20,7 @@ Unlock a deeper understanding of how your parking assets are truly used. The new
 
 <figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
-Elevate your financial visibility with the all-new Revenue Report. Bringing together key performance indicators—including revenue, transactions, refunds, and payment methods—this report offers a comprehensive, unified view of your parking revenue streams. With intuitive breakdowns and time-based analysis, you can effortlessly track performance and uncover opportunities for growth.
+Elevate your financial visibility with the all-new Revenue Report. Bringing together key performance indicators this report offers a comprehensive, unified view of your parking revenue streams. With intuitive breakdowns and time-based analysis, you can effortlessly track performance and uncover opportunities for growth.
 
 ### Improved Occupancy Report
 
