@@ -14,7 +14,7 @@ Avec une solution sur laquelle vous pouvez compter, Spatium tire parti de l’In
 
 Spatium s’adapte dans votre environnement de projet pour y construire l’écosystème idéal tel qu’illustré ci-dessous.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 

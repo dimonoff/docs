@@ -14,13 +14,13 @@ Pour se connecter à Spatium, veuillez suivre ces étapes :
 2. Entrez l’adresse URL donnée par votre administrateur Dimonoff ( [https://app.spatium-iot.com](https://app.spatium-iot.com)). \
    La fenêtre de connexion suivante apparaîtra.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. &#x20;Entrez votre nom d’utilisateur et votre mot de passe puis cliquez sur « Go », ou bien connectez-vous en utilisant l’option _Single-Sign-On_ (SSO) _Google_ ou _Azure Active Directory_ (AD) Microsoft si vous l’avez déjà configurée. La deuxième option implique de se connecter avec les identifiants de votre compte de Microsoft. Contactez votre administrateur système pour plus d’informations. &#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Si vous avez accès à plusieurs licences, une liste de celles auxquelles vous avez accès apparaîtra pour sélection. Sélectionnez celle dans laquelle vous voulez entrer. Si vous avez accès à une seule licence, celle-ci sera automatiquement sélectionnée et cette étape n’apparaîtra pas.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
