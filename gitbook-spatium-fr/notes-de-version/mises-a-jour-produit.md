@@ -7,6 +7,18 @@ description: >-
 # Mises à jour produit
 
 {% updates format="full" %}
+{% update date="2026-04-20" tags="nouveaute" %}
+## L'essentiel en un clin d'oeil grâce aux snapshots caméra
+
+
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-04-20 at 22.56.34.png" alt=""><figcaption></figcaption></figure>
+
+Spatium affiche désormais les snapshots de caméra pour les places équipées de caméras de guidage intérieur. Les opérateurs bénéficient ainsi d’un contexte visuel immédiat, exactement là où il est le plus utile, pour comprendre plus rapidement la situation sur site sans quitter leur flux de travail.
+
+En intégrant ces images directement dans la vue d'une place, les équipes peuvent vérifier une situation plus rapidement, limiter les allers-retours et intervenir avec davantage de confiance. L’expérience de supervision devient plus fluide, plus visuelle, et pensée pour accélérer la prise de décision en temps réel.
+{% endupdate %}
+
 {% update date="2026-04-03" tags="nouveaute,amelioration" %}
 ## Rapport de revenus & analyses d'occupation
 
