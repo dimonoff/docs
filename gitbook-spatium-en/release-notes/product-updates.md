@@ -6,7 +6,7 @@ description: A full rundown of our latest releases, improvements and fixes in Sp
 
 {% updates format="full" %}
 {% update date="2026-04-20" tags="new" %}
-## See More at a Glance with Camera Snapshots
+## See the Essentials at a Glance with Camera Snapshots
 
 
 
