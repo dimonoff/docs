@@ -5,6 +5,18 @@ description: A full rundown of our latest releases, improvements and fixes in Sp
 # Product Updates
 
 {% updates format="full" %}
+{% update date="2026-04-20" tags="new" %}
+## See More at a Glance with Camera Snapshots
+
+
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-04-20 at 22.57.02.png" alt=""><figcaption></figcaption></figure>
+
+Spatium now displays camera snapshots directly within monitored spots equipped with Indoor Guidance Cameras. This gives operators immediate visual context where it matters most, helping them understand on-site conditions faster without leaving the workflow.
+
+By bringing snapshot imagery into the spot view, teams can verify situations more quickly, reduce back-and-forth, and respond with greater confidence. It’s a more streamlined, more visual monitoring experience designed to support faster decisions in real time.
+{% endupdate %}
+
 {% update date="2026-04-03" tags="new,fixed" %}
 ## Enhanced Parking Insights & Revenue Performance Reporting
 
