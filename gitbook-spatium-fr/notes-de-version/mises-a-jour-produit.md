@@ -7,16 +7,14 @@ description: >-
 # Mises à jour produit
 
 {% updates format="full" %}
-
-<!-- release-id: spatium-build-1060 -->
 {% update date="2026-09-21" tags="nouveaute,amelioration,correctif" %}
 ## Gestion des zones LPR
 
-Si vous utilisez des caméras LPR Milesight, vous pouvez maintenant gérer les associations caméra-zone directement dans la vue d'une zone, sans devoir tout refaire une ligne à la fois.
+Si vous utilisez des caméras LPR Milesight, vous pouvez maintenant gérer les associations caméra-zone directement dans la vue d'une zone.
 
-Vous pouvez ajouter une caméra avec plusieurs zones de détection en une seule sauvegarde. Vous pouvez aussi ajouter une zone à une caméra existante sans retaper son numéro de série. Il est maintenant possible de renommer une zone de détection, renommer une caméra, changer son numéro de série, puis supprimer une zone précise ou une caméra complète à partir du même panneau.
+Vous pouvez ajouter une caméra avec plusieurs zones de détection en une seule sauvegarde. Vous pouvez aussi ajouter une zone à une caméra existante. Il est maintenant possible de renommer une zone de détection, renommer une caméra, changer son numéro de série, puis supprimer une zone précise ou une caméra complète à partir du même panneau.
 
-La liste est maintenant regroupée par caméra. C’est beaucoup plus simple de voir quelles zones de détection vont ensemble et comment chacune contribue au comptage.
+La liste est maintenant regroupée par caméra. Il est beaucoup plus simple de voir quelles zones de détection vont ensemble et comment chacune contribue au comptage.
 
 ## Compteur LPR et corrections en direct
 
@@ -24,17 +22,7 @@ Les zones LPR ont maintenant un panneau dédié dans la vue de zone avec les chi
 
 Vous pouvez voir la dernière correction, ajuster le compte courant manuellement, déclarer une zone vide et mettre à jour la capacité sans quitter la page. Le panneau se rafraîchit aussi quand la disponibilité de la zone change, ce qui aide à garder les chiffres alignés avec ce qui se passe sur le terrain.
 
-Quand vous modifiez une zone LPR, Spatium affiche maintenant l’identifiant du compteur de zone en lecture seule, avec une option pour le copier. Pratique quand il faut faire le lien avec d’autre équipement sans partir à la chasse à l’identifiant.
-
-## Correctifs
-
-- Correctif d’un cas où la vue d’une zone pouvait rouvrir la zone consultée précédemment après la navigation.
-- Correctif des associations de caméras LPR qui pouvaient se séparer en cartes en double quand le même numéro de série était saisi avec une casse différente.
-- Correctif de problèmes de rafraîchissement dans le panneau LPR qui pouvaient laisser des valeurs périmées après une correction ou après avoir quitté la page.
-- Correctif d’un formulaire d’association LPR orphelin qui pouvait rester affiché alors que l’élément lié n’existait plus.
-- Rétablissement du comportement natif des boutons pour que les actions et les états désactivés fonctionnent comme prévu dans le Viewer.
-- Correctif de la gestion des erreurs GraphQL qui pouvait sortir inutilement des utilisateurs de leur session ou créer une boucle après un refus d’opération.
-- Correctif d’un échec de requête sur une zone qui pouvait faire tomber toute la page au lieu d’échouer plus proprement.
+Quand vous modifiez une zone LPR, Spatium affiche maintenant l’identifiant du compteur de zone en lecture seule, avec une option pour le copier. Pratique quand il faut faire le lien avec d’autres équipements sans partir à la chasse à l’identifiant.
 {% endupdate %}
 
 {% update date="2026-05-28" tags="nouveaute,amelioration,correctif" %}
