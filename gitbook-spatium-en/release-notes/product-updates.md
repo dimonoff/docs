@@ -5,14 +5,12 @@ description: A full rundown of our latest releases, improvements and fixes in Sp
 # Product Updates
 
 {% updates format="full" %}
-
-<!-- release-id: spatium-build-1060 -->
 {% update date="2026-09-21" tags="new,improved,fixed" %}
 ## LPR zone management
 
-If you use Milesight LPR cameras, you can now manage a zone's camera bindings from the zone viewer instead of piecing it together one row at a time.
+If you use Milesight LPR cameras, you can now manage a zone's camera bindings from the zone viewer.
 
-Add one camera with multiple detection zones in a single save. Add another zone to an existing camera without re-entering the camera serial number. You can also rename a detection zone, rename a camera, change a camera's serial number, and remove individual zones or a whole camera from the same panel.
+Add one camera with multiple detection zones in a single save. Add another zone to an existing camera. You can also rename a detection zone, rename a camera, change a camera's serial number, and remove individual zones or a whole camera from the same panel.
 
 The camera list is now grouped by camera, so it's easier to see which detection zones belong together and how each one contributes to the count.
 
@@ -23,16 +21,6 @@ LPR zones now have a dedicated camera panel in the zone viewer with live occupan
 You can review the latest correction, set the current count manually, mark a zone as empty, and update capacity without leaving the page. The panel also refreshes as zone availability changes, so the numbers stay in step with what operators are seeing on site.
 
 When you edit an LPR zone, Spatium now shows the zone counter ID as a read-only value you can copy. That's handy when you need to map the zone to other equipment without hunting for the identifier elsewhere.
-
-## Bug fixes
-
-- Fixed a case where the zone viewer could reopen the previously viewed zone after navigation.
-- Fixed LPR camera bindings that could split into duplicate camera cards when the same serial number was entered with different letter casing.
-- Fixed LPR panel refresh issues that could keep stale values visible after a correction or after leaving the page.
-- Fixed an orphaned LPR binding form that could stay open after the related item was gone.
-- Restored native button behavior so button actions and disabled states work as expected across the Viewer.
-- Fixed GraphQL error handling that could incorrectly throw users out or loop on refused operations.
-- Fixed a zone query failure that could take the zone page down instead of failing more gracefully.
 {% endupdate %}
 
 {% update date="2026-05-28" tags="new,improved,fixed,security" %}
@@ -47,8 +35,6 @@ Spatium now has a new look and a cleaner layout. Navigation, headers, menus, car
 ## TTS Smart panel setup
 
 You can now configure, monitor and control your TTS smart guidance panels from Spatium, along with your other smart panels already supported.
-
-
 
 ## Bug fixes
 
